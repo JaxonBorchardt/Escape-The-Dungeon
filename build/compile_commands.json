@@ -1,0 +1,27 @@
+[
+{
+  "directory": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/build",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/gamelib.dir/includes_CXX.rsp -g -std=c++17 -g -Wall -Wextra -o CMakeFiles\\gamelib.dir\\graphics.cpp.obj -c C:\\Users\\jaxro\\OneDrive\\SophmoreYear\\Game_Dev\\code-organization\\graphics.cpp",
+  "file": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/graphics.cpp"
+},
+{
+  "directory": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/build",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/gamelib.dir/includes_CXX.rsp -g -std=c++17 -g -Wall -Wextra -o CMakeFiles\\gamelib.dir\\player.cpp.obj -c C:\\Users\\jaxro\\OneDrive\\SophmoreYear\\Game_Dev\\code-organization\\player.cpp",
+  "file": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/player.cpp"
+},
+{
+  "directory": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/build",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/gamelib.dir/includes_CXX.rsp -g -std=c++17 -g -Wall -Wextra -o CMakeFiles\\gamelib.dir\\world.cpp.obj -c C:\\Users\\jaxro\\OneDrive\\SophmoreYear\\Game_Dev\\code-organization\\world.cpp",
+  "file": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/world.cpp"
+},
+{
+  "directory": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/build",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/gamelib.dir/includes_CXX.rsp -g -std=c++17 -g -Wall -Wextra -o CMakeFiles\\gamelib.dir\\vec.cpp.obj -c C:\\Users\\jaxro\\OneDrive\\SophmoreYear\\Game_Dev\\code-organization\\vec.cpp",
+  "file": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/vec.cpp"
+},
+{
+  "directory": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/build",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -std=c++17 -g -Wall -Wextra -o CMakeFiles\\main.dir\\main.cpp.obj -c C:\\Users\\jaxro\\OneDrive\\SophmoreYear\\Game_Dev\\code-organization\\main.cpp",
+  "file": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/main.cpp"
+}
+]

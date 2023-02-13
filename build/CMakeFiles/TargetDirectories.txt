@@ -1,0 +1,4 @@
+C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/build/CMakeFiles/gamelib.dir
+C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/build/CMakeFiles/main.dir
+C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/build/CMakeFiles/edit_cache.dir
+C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/build/CMakeFiles/rebuild_cache.dir

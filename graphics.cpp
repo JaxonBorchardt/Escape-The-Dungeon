@@ -2,6 +2,7 @@
 
 #include <SDL2/SDL.h>
 
+#include <iostream>
 #include <stdexcept>
 
 Graphics::Graphics(const std::string& title, int window_width,
@@ -16,13 +17,13 @@ Graphics::Graphics(const std::string& title, int window_width,
     SDL_Window* window =
         SDL_CreateWindow("Cool Game Title", SDL_WINDOWPOS_CENTERED,
                          SDL_WINDOWPOS_CENTERED, 1280, 720, 0);
-    // Create renderer
-    SDL_Renderer* renderer = SDL_CreateRenderer(
-        window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
     // Errors
     if (!window) {
         std::cout << SDL_GetError() << "\n";
     }
+    // Create renderer
+    renderer = SDL_CreateRenderer(
+        window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
 }
 
 Graphics::~Graphics() {
