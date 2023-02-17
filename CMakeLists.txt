@@ -14,6 +14,8 @@ add_library(gamelib
   player.cpp
   world.cpp
   vec.cpp
+ # camera.cpp
+  tilemap.cpp
 )
 
 

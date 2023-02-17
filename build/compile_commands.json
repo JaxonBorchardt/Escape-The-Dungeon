@@ -21,6 +21,11 @@
 },
 {
   "directory": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/build",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/gamelib.dir/includes_CXX.rsp -g -std=c++17 -g -Wall -Wextra -o CMakeFiles\\gamelib.dir\\tilemap.cpp.obj -c C:\\Users\\jaxro\\OneDrive\\SophmoreYear\\Game_Dev\\code-organization\\tilemap.cpp",
+  "file": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/tilemap.cpp"
+},
+{
+  "directory": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/build",
   "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -std=c++17 -g -Wall -Wextra -o CMakeFiles\\main.dir\\main.cpp.obj -c C:\\Users\\jaxro\\OneDrive\\SophmoreYear\\Game_Dev\\code-organization\\main.cpp",
   "file": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/main.cpp"
 }

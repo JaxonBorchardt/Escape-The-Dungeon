@@ -23,6 +23,7 @@ Vec<T>& operator+=(Vec<T>& left, const Vec<T>& right) {
 template <typename T>
 Vec<T> operator+(Vec<T>& left, const Vec<T>& right) {
     return left += right;
+    return left;
 }
 
 template <typename T>
@@ -45,13 +46,13 @@ Vec<T>& operator*=(Vec<T>& left, const Vec<T>& right) {
 }
 
 template <typename T>
-Vec<T> operator*(Vec<T>& left, const Vec<T>& right) {
+Vec<T> operator*(Vec<T> left, const Vec<T>& right) {
     return left *= right;
 }
 
 template <typename T>
-Vec<T> operator*(Vec<T>& left, T scalar) {  // const on first one
-    return left * Vec{scalar, scalar};
+Vec<T> operator*(Vec<T> left, T scalar) {  // const on first one
+    return left *= Vec{scalar, scalar};
 }
 
 template <typename T>

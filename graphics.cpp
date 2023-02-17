@@ -14,9 +14,9 @@ Graphics::Graphics(const std::string& title, int window_width,
         std::cout << SDL_GetError() << "\n";
     }
     // Create window
-    SDL_Window* window =
-        SDL_CreateWindow("Cool Game Title", SDL_WINDOWPOS_CENTERED,
-                         SDL_WINDOWPOS_CENTERED, 1280, 720, 0);
+    window = SDL_CreateWindow(title.c_str(), SDL_WINDOWPOS_CENTERED,
+                              SDL_WINDOWPOS_CENTERED, window_width,
+                              window_height, 0);
     // Errors
     if (!window) {
         std::cout << SDL_GetError() << "\n";

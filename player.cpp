@@ -2,9 +2,9 @@
 
 #include "world.h"
 
-constexpr double walk_acceleration = 60;
+constexpr double walk_acceleration = 80;
 constexpr double terminal_velocity = 200;
-constexpr double jump_velocity = 150;
+constexpr double jump_velocity = 100;
 constexpr double gravity = 50;
 constexpr double damping = 0.9;
 
@@ -73,7 +73,7 @@ void Player::update(World& world, double dt) {
     future.x = static_cast<int>(position.x);
     future.y = static_cast<int>(pos.y);
     if (world.has_any_intersections(future)) {
-        acceleration.y = 0;
+        acceleration.y = acc.y;
         velocity.y = 0;
     } else {
         acceleration.y = acc.y;
