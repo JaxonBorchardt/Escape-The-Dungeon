@@ -21,7 +21,7 @@ Vec<T>& operator+=(Vec<T>& left, const Vec<T>& right) {
 }
 
 template <typename T>
-Vec<T> operator+(Vec<T>& left, const Vec<T>& right) {
+Vec<T> operator+(Vec<T> left, const Vec<T>& right) {
     return left += right;
     return left;
 }
@@ -34,7 +34,7 @@ Vec<T>& operator-=(Vec<T>& left, const Vec<T>& right) {
 }
 
 template <typename T>
-Vec<T> operator-(Vec<T>& left, const Vec<T>& right) {
+Vec<T> operator-(Vec<T> left, const Vec<T>& right) {
     return left -= right;
 }
 

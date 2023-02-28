@@ -227,6 +227,17 @@ CMakeFiles/main.dir/main.cpp.obj: ../main.cpp \
   C:/msys64/mingw64/include/SDL2/SDL_version.h \
   C:/msys64/mingw64/include/SDL2/SDL_locale.h \
   C:/msys64/mingw64/include/SDL2/SDL_misc.h \
+  C:/msys64/mingw64/include/c++/12.2.0/chrono \
+  C:/msys64/mingw64/include/c++/12.2.0/bits/chrono.h \
+  C:/msys64/mingw64/include/c++/12.2.0/ratio \
+  C:/msys64/mingw64/include/c++/12.2.0/cstdint \
+  C:/msys64/mingw64/include/c++/12.2.0/ctime \
+  C:/msys64/mingw64/include/time.h \
+  C:/msys64/mingw64/include/sys/timeb.h \
+  C:/msys64/mingw64/include/sec_api/sys/timeb_s.h \
+  C:/msys64/mingw64/include/_timeval.h \
+  C:/msys64/mingw64/include/pthread_time.h \
+  C:/msys64/mingw64/include/c++/12.2.0/bits/parse_numbers.h \
   C:/msys64/mingw64/include/c++/12.2.0/iostream \
   C:/msys64/mingw64/include/c++/12.2.0/ostream \
   C:/msys64/mingw64/include/c++/12.2.0/ios \
@@ -244,7 +255,6 @@ CMakeFiles/main.dir/main.cpp.obj: ../main.cpp \
   C:/msys64/mingw64/include/c++/12.2.0/new \
   C:/msys64/mingw64/include/c++/12.2.0/bits/nested_exception.h \
   C:/msys64/mingw64/include/c++/12.2.0/bits/char_traits.h \
-  C:/msys64/mingw64/include/c++/12.2.0/cstdint \
   C:/msys64/mingw64/include/c++/12.2.0/bits/localefwd.h \
   C:/msys64/mingw64/include/c++/12.2.0/x86_64-w64-mingw32/bits/c++locale.h \
   C:/msys64/mingw64/include/c++/12.2.0/clocale \
@@ -257,11 +267,6 @@ CMakeFiles/main.dir/main.cpp.obj: ../main.cpp \
   C:/msys64/mingw64/include/pthread.h \
   C:/msys64/mingw64/include/signal.h \
   C:/msys64/mingw64/include/pthread_signal.h \
-  C:/msys64/mingw64/include/time.h \
-  C:/msys64/mingw64/include/sys/timeb.h \
-  C:/msys64/mingw64/include/sec_api/sys/timeb_s.h \
-  C:/msys64/mingw64/include/_timeval.h \
-  C:/msys64/mingw64/include/pthread_time.h \
   C:/msys64/mingw64/include/pthread_compat.h \
   C:/msys64/mingw64/include/pthread_unistd.h \
   C:/msys64/mingw64/include/c++/12.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
@@ -308,8 +313,7 @@ CMakeFiles/main.dir/main.cpp.obj: ../main.cpp \
   C:/msys64/mingw64/include/c++/12.2.0/bits/ostream.tcc \
   C:/msys64/mingw64/include/c++/12.2.0/istream \
   C:/msys64/mingw64/include/c++/12.2.0/bits/istream.tcc \
-  ../graphics.h \
-  ../player.h \
+  ../camera.h \
   ../vec.h \
   C:/msys64/mingw64/include/c++/12.2.0/functional \
   C:/msys64/mingw64/include/c++/12.2.0/tuple \
@@ -337,7 +341,10 @@ CMakeFiles/main.dir/main.cpp.obj: ../main.cpp \
   C:/msys64/mingw64/include/c++/12.2.0/bits/uniform_int_dist.h \
   C:/msys64/mingw64/include/c++/12.2.0/sstream \
   C:/msys64/mingw64/include/c++/12.2.0/bits/sstream.tcc \
-  ../world.h
+  ../graphics.h \
+  ../player.h \
+  ../world.h \
+  ../tilemap.h
 
 
 C:/msys64/mingw64/include/c++/12.2.0/stdlib.h:
@@ -375,6 +382,8 @@ C:/msys64/mingw64/include/SDL2/SDL_main.h:
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/stdarg.h:
 
 C:/msys64/mingw64/include/SDL2/SDL_stdinc.h:
+
+C:/msys64/mingw64/include/c++/12.2.0/chrono:
 
 C:/msys64/mingw64/include/SDL2/SDL_platform.h:
 
@@ -566,6 +575,8 @@ C:/msys64/mingw64/include/c++/12.2.0/string_view:
 
 C:/msys64/mingw64/include/c++/12.2.0/tr1/gamma.tcc:
 
+../camera.h:
+
 C:/msys64/mingw64/include/c++/12.2.0/tr1/special_function_util.h:
 
 C:/msys64/mingw64/include/c++/12.2.0/sstream:
@@ -710,6 +721,8 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/rtmintrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/serializeintrin.h:
 
+../tilemap.h:
+
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/sgxintrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/tbmintrin.h:
@@ -764,6 +777,8 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/avxvnniintrin.h:
 
 C:/msys64/mingw64/include/c++/12.2.0/bits/streambuf_iterator.h:
 
+C:/msys64/mingw64/include/c++/12.2.0/ratio:
+
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/avx2intrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/avx512pfintrin.h:
@@ -789,6 +804,8 @@ C:/msys64/mingw64/include/c++/12.2.0/bits/refwrap.h:
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/avx5124fmapsintrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/avx5124vnniwintrin.h:
+
+C:/msys64/mingw64/include/c++/12.2.0/ctime:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/avx512vnniintrin.h:
 
@@ -894,6 +911,20 @@ C:/msys64/mingw64/include/SDL2/SDL_timer.h:
 
 C:/msys64/mingw64/include/SDL2/SDL_version.h:
 
+C:/msys64/mingw64/include/c++/12.2.0/bits/chrono.h:
+
+C:/msys64/mingw64/include/c++/12.2.0/cstdint:
+
+C:/msys64/mingw64/include/time.h:
+
+C:/msys64/mingw64/include/sec_api/sys/timeb_s.h:
+
+C:/msys64/mingw64/include/pthread_time.h:
+
+C:/msys64/mingw64/include/c++/12.2.0/istream:
+
+C:/msys64/mingw64/include/c++/12.2.0/bits/parse_numbers.h:
+
 C:/msys64/mingw64/include/c++/12.2.0/iostream:
 
 C:/msys64/mingw64/include/c++/12.2.0/ostream:
@@ -907,8 +938,6 @@ C:/msys64/mingw64/include/c++/12.2.0/bits/cxxabi_init_exception.h:
 C:/msys64/mingw64/include/c++/12.2.0/typeinfo:
 
 C:/msys64/mingw64/include/c++/12.2.0/bits/char_traits.h:
-
-C:/msys64/mingw64/include/c++/12.2.0/cstdint:
 
 C:/msys64/mingw64/include/c++/12.2.0/bits/localefwd.h:
 
@@ -925,12 +954,6 @@ C:/msys64/mingw64/include/pthread.h:
 C:/msys64/mingw64/include/signal.h:
 
 C:/msys64/mingw64/include/pthread_signal.h:
-
-C:/msys64/mingw64/include/time.h:
-
-C:/msys64/mingw64/include/sec_api/sys/timeb_s.h:
-
-C:/msys64/mingw64/include/pthread_time.h:
 
 C:/msys64/mingw64/include/c++/12.2.0/x86_64-w64-mingw32/bits/ctype_base.h:
 
@@ -974,12 +997,6 @@ C:/msys64/mingw64/include/c++/12.2.0/cwctype:
 
 C:/msys64/mingw64/include/c++/12.2.0/bits/ostream.tcc:
 
-C:/msys64/mingw64/include/c++/12.2.0/istream:
-
-../graphics.h:
-
-../player.h:
-
 ../vec.h:
 
 C:/msys64/mingw64/include/c++/12.2.0/bits/uses_allocator.h:
@@ -1011,5 +1028,9 @@ C:/msys64/mingw64/include/c++/12.2.0/bits/algorithmfwd.h:
 C:/msys64/mingw64/include/c++/12.2.0/bits/stl_heap.h:
 
 C:/msys64/mingw64/include/c++/12.2.0/bits/uniform_int_dist.h:
+
+../graphics.h:
+
+../player.h:
 
 ../world.h:

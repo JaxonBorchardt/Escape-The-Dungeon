@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/gamelib.dir/camera.cpp.obj"
+  "CMakeFiles/gamelib.dir/camera.cpp.obj.d"
   "CMakeFiles/gamelib.dir/graphics.cpp.obj"
   "CMakeFiles/gamelib.dir/graphics.cpp.obj.d"
   "CMakeFiles/gamelib.dir/player.cpp.obj"

@@ -128,11 +128,26 @@ CMakeFiles/gamelib.dir/vec.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gamelib.dir/vec.cpp.s"
 	C:\msys64\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\vec.cpp -o CMakeFiles\gamelib.dir\vec.cpp.s
 
+CMakeFiles/gamelib.dir/camera.cpp.obj: CMakeFiles/gamelib.dir/flags.make
+CMakeFiles/gamelib.dir/camera.cpp.obj: CMakeFiles/gamelib.dir/includes_CXX.rsp
+CMakeFiles/gamelib.dir/camera.cpp.obj: ../camera.cpp
+CMakeFiles/gamelib.dir/camera.cpp.obj: CMakeFiles/gamelib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/gamelib.dir/camera.cpp.obj"
+	C:\msys64\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamelib.dir/camera.cpp.obj -MF CMakeFiles\gamelib.dir\camera.cpp.obj.d -o CMakeFiles\gamelib.dir\camera.cpp.obj -c C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\camera.cpp
+
+CMakeFiles/gamelib.dir/camera.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gamelib.dir/camera.cpp.i"
+	C:\msys64\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\camera.cpp > CMakeFiles\gamelib.dir\camera.cpp.i
+
+CMakeFiles/gamelib.dir/camera.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gamelib.dir/camera.cpp.s"
+	C:\msys64\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\camera.cpp -o CMakeFiles\gamelib.dir\camera.cpp.s
+
 CMakeFiles/gamelib.dir/tilemap.cpp.obj: CMakeFiles/gamelib.dir/flags.make
 CMakeFiles/gamelib.dir/tilemap.cpp.obj: CMakeFiles/gamelib.dir/includes_CXX.rsp
 CMakeFiles/gamelib.dir/tilemap.cpp.obj: ../tilemap.cpp
 CMakeFiles/gamelib.dir/tilemap.cpp.obj: CMakeFiles/gamelib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/gamelib.dir/tilemap.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/gamelib.dir/tilemap.cpp.obj"
 	C:\msys64\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamelib.dir/tilemap.cpp.obj -MF CMakeFiles\gamelib.dir\tilemap.cpp.obj.d -o CMakeFiles\gamelib.dir\tilemap.cpp.obj -c C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\tilemap.cpp
 
 CMakeFiles/gamelib.dir/tilemap.cpp.i: cmake_force
@@ -149,6 +164,7 @@ gamelib_OBJECTS = \
 "CMakeFiles/gamelib.dir/player.cpp.obj" \
 "CMakeFiles/gamelib.dir/world.cpp.obj" \
 "CMakeFiles/gamelib.dir/vec.cpp.obj" \
+"CMakeFiles/gamelib.dir/camera.cpp.obj" \
 "CMakeFiles/gamelib.dir/tilemap.cpp.obj"
 
 # External object files for target gamelib
@@ -158,10 +174,11 @@ libgamelib.a: CMakeFiles/gamelib.dir/graphics.cpp.obj
 libgamelib.a: CMakeFiles/gamelib.dir/player.cpp.obj
 libgamelib.a: CMakeFiles/gamelib.dir/world.cpp.obj
 libgamelib.a: CMakeFiles/gamelib.dir/vec.cpp.obj
+libgamelib.a: CMakeFiles/gamelib.dir/camera.cpp.obj
 libgamelib.a: CMakeFiles/gamelib.dir/tilemap.cpp.obj
 libgamelib.a: CMakeFiles/gamelib.dir/build.make
 libgamelib.a: CMakeFiles/gamelib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libgamelib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library libgamelib.a"
 	$(CMAKE_COMMAND) -P CMakeFiles\gamelib.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\gamelib.dir\link.txt --verbose=$(VERBOSE)
 
