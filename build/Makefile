@@ -165,6 +165,54 @@ camera.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/camera.cpp.s
 .PHONY : camera.cpp.s
 
+command.obj: command.cpp.obj
+.PHONY : command.obj
+
+# target to build an object file
+command.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/command.cpp.obj
+.PHONY : command.cpp.obj
+
+command.i: command.cpp.i
+.PHONY : command.i
+
+# target to preprocess a source file
+command.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/command.cpp.i
+.PHONY : command.cpp.i
+
+command.s: command.cpp.s
+.PHONY : command.s
+
+# target to generate assembly for a file
+command.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/command.cpp.s
+.PHONY : command.cpp.s
+
+fsm.obj: fsm.cpp.obj
+.PHONY : fsm.obj
+
+# target to build an object file
+fsm.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/fsm.cpp.obj
+.PHONY : fsm.cpp.obj
+
+fsm.i: fsm.cpp.i
+.PHONY : fsm.i
+
+# target to preprocess a source file
+fsm.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/fsm.cpp.i
+.PHONY : fsm.cpp.i
+
+fsm.s: fsm.cpp.s
+.PHONY : fsm.s
+
+# target to generate assembly for a file
+fsm.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/fsm.cpp.s
+.PHONY : fsm.cpp.s
+
 graphics.obj: graphics.cpp.obj
 .PHONY : graphics.obj
 
@@ -212,6 +260,30 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+physics.obj: physics.cpp.obj
+.PHONY : physics.obj
+
+# target to build an object file
+physics.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/physics.cpp.obj
+.PHONY : physics.cpp.obj
+
+physics.i: physics.cpp.i
+.PHONY : physics.i
+
+# target to preprocess a source file
+physics.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/physics.cpp.i
+.PHONY : physics.cpp.i
+
+physics.s: physics.cpp.s
+.PHONY : physics.s
+
+# target to generate assembly for a file
+physics.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/physics.cpp.s
+.PHONY : physics.cpp.s
 
 player.obj: player.cpp.obj
 .PHONY : player.obj
@@ -322,12 +394,21 @@ help:
 	@echo ... camera.obj
 	@echo ... camera.i
 	@echo ... camera.s
+	@echo ... command.obj
+	@echo ... command.i
+	@echo ... command.s
+	@echo ... fsm.obj
+	@echo ... fsm.i
+	@echo ... fsm.s
 	@echo ... graphics.obj
 	@echo ... graphics.i
 	@echo ... graphics.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... physics.obj
+	@echo ... physics.i
+	@echo ... physics.s
 	@echo ... player.obj
 	@echo ... player.i
 	@echo ... player.s

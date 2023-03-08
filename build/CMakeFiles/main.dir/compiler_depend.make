@@ -313,11 +313,22 @@ CMakeFiles/main.dir/main.cpp.obj: ../main.cpp \
   C:/msys64/mingw64/include/c++/12.2.0/bits/ostream.tcc \
   C:/msys64/mingw64/include/c++/12.2.0/istream \
   C:/msys64/mingw64/include/c++/12.2.0/bits/istream.tcc \
+  C:/msys64/mingw64/include/c++/12.2.0/queue \
+  C:/msys64/mingw64/include/c++/12.2.0/deque \
+  C:/msys64/mingw64/include/c++/12.2.0/bits/stl_uninitialized.h \
+  C:/msys64/mingw64/include/c++/12.2.0/bits/stl_deque.h \
+  C:/msys64/mingw64/include/c++/12.2.0/bits/deque.tcc \
+  C:/msys64/mingw64/include/c++/12.2.0/vector \
+  C:/msys64/mingw64/include/c++/12.2.0/bits/stl_vector.h \
+  C:/msys64/mingw64/include/c++/12.2.0/bits/stl_bvector.h \
+  C:/msys64/mingw64/include/c++/12.2.0/bits/vector.tcc \
+  C:/msys64/mingw64/include/c++/12.2.0/bits/stl_heap.h \
+  C:/msys64/mingw64/include/c++/12.2.0/bits/stl_queue.h \
+  C:/msys64/mingw64/include/c++/12.2.0/bits/uses_allocator.h \
   ../camera.h \
   ../vec.h \
   C:/msys64/mingw64/include/c++/12.2.0/functional \
   C:/msys64/mingw64/include/c++/12.2.0/tuple \
-  C:/msys64/mingw64/include/c++/12.2.0/bits/uses_allocator.h \
   C:/msys64/mingw64/include/c++/12.2.0/bits/std_function.h \
   C:/msys64/mingw64/include/c++/12.2.0/unordered_map \
   C:/msys64/mingw64/include/c++/12.2.0/ext/aligned_buffer.h \
@@ -327,22 +338,34 @@ CMakeFiles/main.dir/main.cpp.obj: ../main.cpp \
   C:/msys64/mingw64/include/c++/12.2.0/bits/node_handle.h \
   C:/msys64/mingw64/include/c++/12.2.0/bits/unordered_map.h \
   C:/msys64/mingw64/include/c++/12.2.0/bits/erase_if.h \
-  C:/msys64/mingw64/include/c++/12.2.0/vector \
-  C:/msys64/mingw64/include/c++/12.2.0/bits/stl_uninitialized.h \
-  C:/msys64/mingw64/include/c++/12.2.0/bits/stl_vector.h \
-  C:/msys64/mingw64/include/c++/12.2.0/bits/stl_bvector.h \
-  C:/msys64/mingw64/include/c++/12.2.0/bits/vector.tcc \
   C:/msys64/mingw64/include/c++/12.2.0/array \
   C:/msys64/mingw64/include/c++/12.2.0/compare \
   C:/msys64/mingw64/include/c++/12.2.0/bits/stl_algo.h \
   C:/msys64/mingw64/include/c++/12.2.0/bits/algorithmfwd.h \
-  C:/msys64/mingw64/include/c++/12.2.0/bits/stl_heap.h \
   C:/msys64/mingw64/include/c++/12.2.0/bits/stl_tempbuf.h \
   C:/msys64/mingw64/include/c++/12.2.0/bits/uniform_int_dist.h \
   C:/msys64/mingw64/include/c++/12.2.0/sstream \
   C:/msys64/mingw64/include/c++/12.2.0/bits/sstream.tcc \
+  ../command.h \
   ../graphics.h \
   ../player.h \
+  C:/msys64/mingw64/include/c++/12.2.0/memory \
+  C:/msys64/mingw64/include/c++/12.2.0/bits/stl_raw_storage_iter.h \
+  C:/msys64/mingw64/include/c++/12.2.0/bits/align.h \
+  C:/msys64/mingw64/include/c++/12.2.0/bit \
+  C:/msys64/mingw64/include/c++/12.2.0/bits/unique_ptr.h \
+  C:/msys64/mingw64/include/c++/12.2.0/bits/shared_ptr.h \
+  C:/msys64/mingw64/include/c++/12.2.0/bits/shared_ptr_base.h \
+  C:/msys64/mingw64/include/c++/12.2.0/bits/allocated_ptr.h \
+  C:/msys64/mingw64/include/c++/12.2.0/ext/concurrence.h \
+  C:/msys64/mingw64/include/c++/12.2.0/bits/shared_ptr_atomic.h \
+  C:/msys64/mingw64/include/c++/12.2.0/bits/atomic_base.h \
+  C:/msys64/mingw64/include/c++/12.2.0/bits/atomic_lockfree_defines.h \
+  C:/msys64/mingw64/include/c++/12.2.0/backward/auto_ptr.h \
+  C:/msys64/mingw64/include/c++/12.2.0/pstl/glue_memory_defs.h \
+  C:/msys64/mingw64/include/c++/12.2.0/pstl/execution_defs.h \
+  ../fsm.h \
+  ../physics.h \
   ../world.h \
   ../tilemap.h
 
@@ -375,9 +398,13 @@ C:/msys64/mingw64/include/SDL2/SDL.h:
 
 C:/msys64/mingw64/include/c++/12.2.0/cstdlib:
 
+C:/msys64/mingw64/include/c++/12.2.0/bits/shared_ptr_atomic.h:
+
 C:/msys64/mingw64/include/c++/12.2.0/tr1/hypergeometric.tcc:
 
 C:/msys64/mingw64/include/SDL2/SDL_main.h:
+
+C:/msys64/mingw64/include/c++/12.2.0/bits/shared_ptr.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/stdarg.h:
 
@@ -431,9 +458,13 @@ C:/msys64/mingw64/include/swprintf.inl:
 
 C:/msys64/mingw64/include/c++/12.2.0/x86_64-w64-mingw32/bits/c++config.h:
 
+C:/msys64/mingw64/include/c++/12.2.0/bits/atomic_base.h:
+
 C:/msys64/mingw64/include/SDL2/SDL_loadso.h:
 
 C:/msys64/mingw64/include/sec_api/stdio_s.h:
+
+C:/msys64/mingw64/include/c++/12.2.0/deque:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/avx512vpopcntdqintrin.h:
 
@@ -466,6 +497,8 @@ C:/msys64/mingw64/include/c++/12.2.0/bits/range_access.h:
 C:/msys64/mingw64/include/pthread_compat.h:
 
 C:/msys64/mingw64/include/c++/12.2.0/bits/stl_algobase.h:
+
+C:/msys64/mingw64/include/c++/12.2.0/bits/stl_deque.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/mm_malloc.h:
 
@@ -525,6 +558,8 @@ C:/msys64/mingw64/include/c++/12.2.0/bits/specfun.h:
 
 C:/msys64/mingw64/include/ctype.h:
 
+C:/msys64/mingw64/include/c++/12.2.0/queue:
+
 C:/msys64/mingw64/include/c++/12.2.0/cmath:
 
 C:/msys64/mingw64/include/c++/12.2.0/bits/functional_hash.h:
@@ -540,6 +575,8 @@ C:/msys64/mingw64/include/c++/12.2.0/bits/move.h:
 C:/msys64/mingw64/include/c++/12.2.0/bits/concept_check.h:
 
 C:/msys64/mingw64/include/c++/12.2.0/bits/functexcept.h:
+
+../physics.h:
 
 C:/msys64/mingw64/include/sys/timeb.h:
 
@@ -592,6 +629,8 @@ C:/msys64/mingw64/include/c++/12.2.0/tr1/exp_integral.tcc:
 C:/msys64/mingw64/include/c++/12.2.0/tr1/legendre_function.tcc:
 
 C:/msys64/mingw64/include/c++/12.2.0/tr1/modified_bessel_func.tcc:
+
+C:/msys64/mingw64/include/c++/12.2.0/ext/concurrence.h:
 
 C:/msys64/mingw64/include/c++/12.2.0/tr1/poly_hermite.tcc:
 
@@ -691,11 +730,15 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/avx512fintrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/fxsrintrin.h:
 
+C:/msys64/mingw64/include/c++/12.2.0/pstl/execution_defs.h:
+
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/lzcntintrin.h:
 
 C:/msys64/mingw64/include/SDL2/SDL_keyboard.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/lwpintrin.h:
+
+../command.h:
 
 C:/msys64/mingw64/include/_timeval.h:
 
@@ -740,6 +783,8 @@ C:/msys64/mingw64/include/SDL2/SDL_system.h:
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/wbnoinvdintrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/xsaveintrin.h:
+
+C:/msys64/mingw64/include/c++/12.2.0/bits/stl_queue.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/xsaveoptintrin.h:
 
@@ -808,6 +853,8 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/avx5124vnniwintrin.h
 C:/msys64/mingw64/include/c++/12.2.0/ctime:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/avx512vnniintrin.h:
+
+C:/msys64/mingw64/include/c++/12.2.0/pstl/glue_memory_defs.h:
 
 C:/msys64/mingw64/include/c++/12.2.0/cctype:
 
@@ -888,6 +935,8 @@ C:/msys64/mingw64/include/SDL2/SDL_touch.h:
 C:/msys64/mingw64/include/c++/12.2.0/bits/erase_if.h:
 
 C:/msys64/mingw64/include/SDL2/SDL_filesystem.h:
+
+C:/msys64/mingw64/include/c++/12.2.0/bit:
 
 C:/msys64/mingw64/include/c++/12.2.0/bits/hash_bytes.h:
 
@@ -997,9 +1046,23 @@ C:/msys64/mingw64/include/c++/12.2.0/cwctype:
 
 C:/msys64/mingw64/include/c++/12.2.0/bits/ostream.tcc:
 
-../vec.h:
+../fsm.h:
+
+C:/msys64/mingw64/include/c++/12.2.0/bits/stl_uninitialized.h:
+
+C:/msys64/mingw64/include/c++/12.2.0/bits/deque.tcc:
+
+C:/msys64/mingw64/include/c++/12.2.0/vector:
+
+C:/msys64/mingw64/include/c++/12.2.0/bits/stl_vector.h:
+
+C:/msys64/mingw64/include/c++/12.2.0/bits/stl_bvector.h:
+
+C:/msys64/mingw64/include/c++/12.2.0/bits/stl_heap.h:
 
 C:/msys64/mingw64/include/c++/12.2.0/bits/uses_allocator.h:
+
+../vec.h:
 
 C:/msys64/mingw64/include/c++/12.2.0/unordered_map:
 
@@ -1013,24 +1076,30 @@ C:/msys64/mingw64/include/c++/12.2.0/bits/enable_special_members.h:
 
 C:/msys64/mingw64/include/c++/12.2.0/bits/node_handle.h:
 
-C:/msys64/mingw64/include/c++/12.2.0/vector:
-
-C:/msys64/mingw64/include/c++/12.2.0/bits/stl_uninitialized.h:
-
-C:/msys64/mingw64/include/c++/12.2.0/bits/stl_vector.h:
-
-C:/msys64/mingw64/include/c++/12.2.0/bits/stl_bvector.h:
-
 C:/msys64/mingw64/include/c++/12.2.0/array:
 
 C:/msys64/mingw64/include/c++/12.2.0/bits/algorithmfwd.h:
-
-C:/msys64/mingw64/include/c++/12.2.0/bits/stl_heap.h:
 
 C:/msys64/mingw64/include/c++/12.2.0/bits/uniform_int_dist.h:
 
 ../graphics.h:
 
 ../player.h:
+
+C:/msys64/mingw64/include/c++/12.2.0/memory:
+
+C:/msys64/mingw64/include/c++/12.2.0/bits/stl_raw_storage_iter.h:
+
+C:/msys64/mingw64/include/c++/12.2.0/bits/align.h:
+
+C:/msys64/mingw64/include/c++/12.2.0/bits/unique_ptr.h:
+
+C:/msys64/mingw64/include/c++/12.2.0/bits/shared_ptr_base.h:
+
+C:/msys64/mingw64/include/c++/12.2.0/bits/allocated_ptr.h:
+
+C:/msys64/mingw64/include/c++/12.2.0/bits/atomic_lockfree_defines.h:
+
+C:/msys64/mingw64/include/c++/12.2.0/backward/auto_ptr.h:
 
 ../world.h:

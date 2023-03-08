@@ -4,8 +4,10 @@
 
 #include <chrono>
 #include <iostream>
+#include <queue>
 
 #include "camera.h"
+#include "command.h"
 #include "graphics.h"
 #include "player.h"
 #include "vec.h"
@@ -34,15 +36,22 @@ int main() {
     Camera camera{graphics, tilesize};
     camera.move_to({10, 5});
 
+    // std::queue<std::pair<double, std::unique_ptr<Command>>> script;
+    // script.push({3, std::make_unique<Run>(40)});
+    // script.push({5, std::make_unique<Jump>(25)});
+    // script.push({7, std::make_unique<Stop>()});
+
     bool grid_on{false};
     bool running{true};
     auto previous = std::chrono::high_resolution_clock::now();  // previous time
+    // double runtime{0.0};
     double lag{0.0};
     while (running) {
         auto current =
             std::chrono::high_resolution_clock::now();  // current time
         std::chrono::duration<double> elapsed = current - previous;
         previous = current;
+        // runtime += elapsed.count();
         lag += elapsed.count();
 
         SDL_Event event;
@@ -55,6 +64,20 @@ int main() {
             if (event.type == SDL_KEYDOWN && event.key.keysym.sym == SDLK_g) {
                 grid_on = !grid_on;
             }
+            auto command = player.handle_input(event);
+            if (command) {
+                command->execute(player, world);
+            }
+
+            // if (!script.empty()) {
+            //     double time = script.front().first;
+            //     if (runtime >= time) {
+            //         auto command = std::move(script.front().second);
+
+            //         script.pop();
+            //         command->execute(player, world);
+            //     }
+            // }
             // pass the rest of the events to the player who will
             // react to keypresses by moving
             player.handle_input(event);

@@ -8,9 +8,12 @@ find_package(SDL2 REQUIRED)
 
 add_library(gamelib
   graphics.cpp
+  physics.cpp
+  fsm.cpp
   player.cpp
   world.cpp
   vec.cpp
+  command.cpp
  camera.cpp
   tilemap.cpp
 )

@@ -10,14 +10,13 @@ Camera::Camera(Graphics& graphics, int tilesize)
 
 void Camera::move_to(const Vec<double>& new_locaiton) {
     location.x = new_locaiton.x;
-    location.y = visible_max.y / 2;
-
-    double gap = new_locaiton.y - visible_max.y + 3;
-    if (gap > 0) {
-        location.y += gap;
-    } else {
-        location.y = 5;
-    }
+    location.y = new_locaiton.y;
+    location.y =
+        std::clamp(location.y, 5.0, static_cast<double>(visible_max.y));
+    location.x =
+        std::clamp(location.x, 7.0, static_cast<double>(visible_max.x));
+    location.x =
+        std::clamp(location.x, -7.0, static_cast<double>(visible_max.x));
 
     calculate_visible_tiles();
 }

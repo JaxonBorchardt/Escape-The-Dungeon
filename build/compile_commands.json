@@ -6,6 +6,16 @@
 },
 {
   "directory": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/build",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/gamelib.dir/includes_CXX.rsp -g -std=c++17 -g -Wall -Wextra -o CMakeFiles\\gamelib.dir\\physics.cpp.obj -c C:\\Users\\jaxro\\OneDrive\\SophmoreYear\\Game_Dev\\code-organization\\physics.cpp",
+  "file": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/physics.cpp"
+},
+{
+  "directory": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/build",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/gamelib.dir/includes_CXX.rsp -g -std=c++17 -g -Wall -Wextra -o CMakeFiles\\gamelib.dir\\fsm.cpp.obj -c C:\\Users\\jaxro\\OneDrive\\SophmoreYear\\Game_Dev\\code-organization\\fsm.cpp",
+  "file": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/fsm.cpp"
+},
+{
+  "directory": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/build",
   "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/gamelib.dir/includes_CXX.rsp -g -std=c++17 -g -Wall -Wextra -o CMakeFiles\\gamelib.dir\\player.cpp.obj -c C:\\Users\\jaxro\\OneDrive\\SophmoreYear\\Game_Dev\\code-organization\\player.cpp",
   "file": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/player.cpp"
 },
@@ -18,6 +28,11 @@
   "directory": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/build",
   "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/gamelib.dir/includes_CXX.rsp -g -std=c++17 -g -Wall -Wextra -o CMakeFiles\\gamelib.dir\\vec.cpp.obj -c C:\\Users\\jaxro\\OneDrive\\SophmoreYear\\Game_Dev\\code-organization\\vec.cpp",
   "file": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/vec.cpp"
+},
+{
+  "directory": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/build",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/gamelib.dir/includes_CXX.rsp -g -std=c++17 -g -Wall -Wextra -o CMakeFiles\\gamelib.dir\\command.cpp.obj -c C:\\Users\\jaxro\\OneDrive\\SophmoreYear\\Game_Dev\\code-organization\\command.cpp",
+  "file": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/command.cpp"
 },
 {
   "directory": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/build",
