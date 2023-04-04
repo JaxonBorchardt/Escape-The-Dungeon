@@ -36,6 +36,16 @@
 },
 {
   "directory": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/build",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/gamelib.dir/includes_CXX.rsp -g -std=c++17 -g -Wall -Wextra -o CMakeFiles\\gamelib.dir\\audio.cpp.obj -c C:\\Users\\jaxro\\OneDrive\\SophmoreYear\\Game_Dev\\code-organization\\audio.cpp",
+  "file": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/audio.cpp"
+},
+{
+  "directory": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/build",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/gamelib.dir/includes_CXX.rsp -g -std=c++17 -g -Wall -Wextra -o CMakeFiles\\gamelib.dir\\animatedsprite.cpp.obj -c C:\\Users\\jaxro\\OneDrive\\SophmoreYear\\Game_Dev\\code-organization\\animatedsprite.cpp",
+  "file": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/animatedsprite.cpp"
+},
+{
+  "directory": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/build",
   "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/gamelib.dir/includes_CXX.rsp -g -std=c++17 -g -Wall -Wextra -o CMakeFiles\\gamelib.dir\\camera.cpp.obj -c C:\\Users\\jaxro\\OneDrive\\SophmoreYear\\Game_Dev\\code-organization\\camera.cpp",
   "file": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/camera.cpp"
 },
@@ -43,6 +53,31 @@
   "directory": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/build",
   "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/gamelib.dir/includes_CXX.rsp -g -std=c++17 -g -Wall -Wextra -o CMakeFiles\\gamelib.dir\\tilemap.cpp.obj -c C:\\Users\\jaxro\\OneDrive\\SophmoreYear\\Game_Dev\\code-organization\\tilemap.cpp",
   "file": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/tilemap.cpp"
+},
+{
+  "directory": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/build",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/gamelib.dir/includes_CXX.rsp -g -std=c++17 -g -Wall -Wextra -o CMakeFiles\\gamelib.dir\\engine.cpp.obj -c C:\\Users\\jaxro\\OneDrive\\SophmoreYear\\Game_Dev\\code-organization\\engine.cpp",
+  "file": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/engine.cpp"
+},
+{
+  "directory": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/build",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/gamelib.dir/includes_CXX.rsp -g -std=c++17 -g -Wall -Wextra -o CMakeFiles\\gamelib.dir\\settings.cpp.obj -c C:\\Users\\jaxro\\OneDrive\\SophmoreYear\\Game_Dev\\code-organization\\settings.cpp",
+  "file": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/settings.cpp"
+},
+{
+  "directory": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/build",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/gamelib.dir/includes_CXX.rsp -g -std=c++17 -g -Wall -Wextra -o CMakeFiles\\gamelib.dir\\level.cpp.obj -c C:\\Users\\jaxro\\OneDrive\\SophmoreYear\\Game_Dev\\code-organization\\level.cpp",
+  "file": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/level.cpp"
+},
+{
+  "directory": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/build",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/gamelib.dir/includes_CXX.rsp -g -std=c++17 -g -Wall -Wextra -o CMakeFiles\\gamelib.dir\\sprite.cpp.obj -c C:\\Users\\jaxro\\OneDrive\\SophmoreYear\\Game_Dev\\code-organization\\sprite.cpp",
+  "file": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/sprite.cpp"
+},
+{
+  "directory": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/build",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/gamelib.dir/includes_CXX.rsp -g -std=c++17 -g -Wall -Wextra -o CMakeFiles\\gamelib.dir\\randomness.cpp.obj -c C:\\Users\\jaxro\\OneDrive\\SophmoreYear\\Game_Dev\\code-organization\\randomness.cpp",
+  "file": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/randomness.cpp"
 },
 {
   "directory": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/build",

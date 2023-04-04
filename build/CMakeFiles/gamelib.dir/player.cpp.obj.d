@@ -345,7 +345,14 @@ CMakeFiles/gamelib.dir/player.cpp.obj: \
  C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\command.h \
  C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\fsm.h \
  C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\graphics.h \
+ C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\animatedsprite.h \
+ C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\sprite.h \
  C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\physics.h \
  C:/msys64/mingw64/include/c++/12.2.0/iostream \
+ C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\engine.h \
+ C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\audio.h \
+ C:/msys64/mingw64/include/SDL2/SDL_mixer.h \
+ C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\camera.h \
  C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\world.h \
- C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\tilemap.h
+ C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\tilemap.h \
+ C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\level.h

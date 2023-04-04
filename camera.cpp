@@ -1,14 +1,18 @@
 #include "camera.h"
 
 #include "graphics.h"
+#include "player.h"
 #include "tilemap.h"
+#include "physics.h"
 
-Camera::Camera(Graphics& graphics, int tilesize)
-    : graphics{graphics}, tilesize{tilesize} {
+Camera::Camera(Graphics &graphics, int tilesize)
+    : graphics{graphics}, tilesize{tilesize}
+{
     calculate_visible_tiles();
 }
 
-void Camera::move_to(const Vec<double>& new_locaiton) {
+void Camera::move_to(const Vec<double> &new_locaiton)
+{
     location.x = new_locaiton.x;
     location.y = new_locaiton.y;
     location.y =
@@ -21,7 +25,8 @@ void Camera::move_to(const Vec<double>& new_locaiton) {
     calculate_visible_tiles();
 }
 
-Vec<int> Camera::world_to_screen(const Vec<double>& world_position) const {
+Vec<int> Camera::world_to_screen(const Vec<double> &world_position) const
+{
     Vec<double> scaled =
         (world_position - location) * static_cast<double>(tilesize);
     Vec<int> pixel{static_cast<int>(scaled.x), static_cast<int>(scaled.y)};
@@ -34,15 +39,17 @@ Vec<int> Camera::world_to_screen(const Vec<double>& world_position) const {
     return pixel;
 }
 
-void Camera::render(const Vec<double>& position, const Color& color,
-                    bool filled) const {
+void Camera::render(const Vec<double> &position, const Color &color,
+                    bool filled) const
+{
     Vec<int> pixel = world_to_screen(position);
     pixel -= Vec{tilesize / 2, tilesize / 2};
     SDL_Rect rect{pixel.x, pixel.y, tilesize, tilesize};
     graphics.draw(rect, color, filled);
 }
 
-void Camera::render(const Tilemap& tilemap, bool grid_on) const {
+void Camera::render(const Tilemap &tilemap, bool grid_on) const
+{
     // avoid negative indices into tilemap
     int xmin = std::max(0, visible_min.x);
     int ymin = std::max(0, visible_min.y);
@@ -51,24 +58,52 @@ void Camera::render(const Tilemap& tilemap, bool grid_on) const {
     int ymax = std::min(visible_max.y, tilemap.height - 1);
 
     // draw tiles
-    for (int y = ymin; y <= ymax; ++y) {
-        for (int x = xmin; x <= xmax; ++x) {
-            const Tile& tile = tilemap(x, y);
+    for (int y = ymin; y <= ymax; ++y)
+    {
+        for (int x = xmin; x <= xmax; ++x)
+        {
+            const Tile &tile = tilemap(x, y);
             Vec<double> position{static_cast<double>(x),
                                  static_cast<double>(y)};
-            if (tile == Tile::Platform) {
-                render(position, {170, 255, 0, 255});
-            } else {
-                render(position, {0, 127, 127, 255});
-            }
-            if (grid_on) {
-                render(position, {0, 0, 0, 255}, false);
+            render(position, tile.sprite);
+            // if (tile == Tile::Platform) {
+            //     render(position, Color{170, 255, 0, 255});
+            // } else {
+            //     render(position, Color{0, 127, 127, 255});
+            // }
+            if (grid_on)
+            {
+                render(position, Color{0, 0, 0, 255}, false);
             }
         }
     }
 }
 
-void Camera::calculate_visible_tiles() {
+void Camera::render(const Vec<double> &position, const Sprite &sprite) const
+{
+    Vec<int> pixel = world_to_screen(position);
+    pixel.y +=
+        tilesize / 2; // shift sprites bottom center down to bottom of tile
+    graphics.draw_sprite(pixel, sprite);
+}
+
+void Camera::render(const Player &player) const
+{
+    render(player.physics.position, player.color);
+    render(player.physics.position, player.sprite);
+}
+
+void Camera::render(const std::vector<std::pair<Sprite, int>> &backgrounds) const
+{
+    for (auto [sprite, distance] : backgrounds)
+    {
+        int shift = static_cast<int>(location.x / distance);
+        graphics.draw_sprite({-shift, 0}, sprite);
+    }
+}
+
+void Camera::calculate_visible_tiles()
+{
     // number of tiles visible (plus one for the edges)
     Vec<int> num_tiles =
         Vec{graphics.width, graphics.height} / (2 * tilesize) + Vec{1, 1};

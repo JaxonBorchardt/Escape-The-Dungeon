@@ -141,6 +141,54 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+animatedsprite.obj: animatedsprite.cpp.obj
+.PHONY : animatedsprite.obj
+
+# target to build an object file
+animatedsprite.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/animatedsprite.cpp.obj
+.PHONY : animatedsprite.cpp.obj
+
+animatedsprite.i: animatedsprite.cpp.i
+.PHONY : animatedsprite.i
+
+# target to preprocess a source file
+animatedsprite.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/animatedsprite.cpp.i
+.PHONY : animatedsprite.cpp.i
+
+animatedsprite.s: animatedsprite.cpp.s
+.PHONY : animatedsprite.s
+
+# target to generate assembly for a file
+animatedsprite.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/animatedsprite.cpp.s
+.PHONY : animatedsprite.cpp.s
+
+audio.obj: audio.cpp.obj
+.PHONY : audio.obj
+
+# target to build an object file
+audio.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/audio.cpp.obj
+.PHONY : audio.cpp.obj
+
+audio.i: audio.cpp.i
+.PHONY : audio.i
+
+# target to preprocess a source file
+audio.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/audio.cpp.i
+.PHONY : audio.cpp.i
+
+audio.s: audio.cpp.s
+.PHONY : audio.s
+
+# target to generate assembly for a file
+audio.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/audio.cpp.s
+.PHONY : audio.cpp.s
+
 camera.obj: camera.cpp.obj
 .PHONY : camera.obj
 
@@ -189,6 +237,30 @@ command.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/command.cpp.s
 .PHONY : command.cpp.s
 
+engine.obj: engine.cpp.obj
+.PHONY : engine.obj
+
+# target to build an object file
+engine.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/engine.cpp.obj
+.PHONY : engine.cpp.obj
+
+engine.i: engine.cpp.i
+.PHONY : engine.i
+
+# target to preprocess a source file
+engine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/engine.cpp.i
+.PHONY : engine.cpp.i
+
+engine.s: engine.cpp.s
+.PHONY : engine.s
+
+# target to generate assembly for a file
+engine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/engine.cpp.s
+.PHONY : engine.cpp.s
+
 fsm.obj: fsm.cpp.obj
 .PHONY : fsm.obj
 
@@ -236,6 +308,30 @@ graphics.s: graphics.cpp.s
 graphics.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/graphics.cpp.s
 .PHONY : graphics.cpp.s
+
+level.obj: level.cpp.obj
+.PHONY : level.obj
+
+# target to build an object file
+level.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/level.cpp.obj
+.PHONY : level.cpp.obj
+
+level.i: level.cpp.i
+.PHONY : level.i
+
+# target to preprocess a source file
+level.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/level.cpp.i
+.PHONY : level.cpp.i
+
+level.s: level.cpp.s
+.PHONY : level.s
+
+# target to generate assembly for a file
+level.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/level.cpp.s
+.PHONY : level.cpp.s
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
@@ -308,6 +404,78 @@ player.s: player.cpp.s
 player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/player.cpp.s
 .PHONY : player.cpp.s
+
+randomness.obj: randomness.cpp.obj
+.PHONY : randomness.obj
+
+# target to build an object file
+randomness.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/randomness.cpp.obj
+.PHONY : randomness.cpp.obj
+
+randomness.i: randomness.cpp.i
+.PHONY : randomness.i
+
+# target to preprocess a source file
+randomness.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/randomness.cpp.i
+.PHONY : randomness.cpp.i
+
+randomness.s: randomness.cpp.s
+.PHONY : randomness.s
+
+# target to generate assembly for a file
+randomness.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/randomness.cpp.s
+.PHONY : randomness.cpp.s
+
+settings.obj: settings.cpp.obj
+.PHONY : settings.obj
+
+# target to build an object file
+settings.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/settings.cpp.obj
+.PHONY : settings.cpp.obj
+
+settings.i: settings.cpp.i
+.PHONY : settings.i
+
+# target to preprocess a source file
+settings.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/settings.cpp.i
+.PHONY : settings.cpp.i
+
+settings.s: settings.cpp.s
+.PHONY : settings.s
+
+# target to generate assembly for a file
+settings.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/settings.cpp.s
+.PHONY : settings.cpp.s
+
+sprite.obj: sprite.cpp.obj
+.PHONY : sprite.obj
+
+# target to build an object file
+sprite.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/sprite.cpp.obj
+.PHONY : sprite.cpp.obj
+
+sprite.i: sprite.cpp.i
+.PHONY : sprite.i
+
+# target to preprocess a source file
+sprite.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/sprite.cpp.i
+.PHONY : sprite.cpp.i
+
+sprite.s: sprite.cpp.s
+.PHONY : sprite.s
+
+# target to generate assembly for a file
+sprite.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/sprite.cpp.s
+.PHONY : sprite.cpp.s
 
 tilemap.obj: tilemap.cpp.obj
 .PHONY : tilemap.obj
@@ -391,18 +559,30 @@ help:
 	@echo ... rebuild_cache
 	@echo ... gamelib
 	@echo ... main
+	@echo ... animatedsprite.obj
+	@echo ... animatedsprite.i
+	@echo ... animatedsprite.s
+	@echo ... audio.obj
+	@echo ... audio.i
+	@echo ... audio.s
 	@echo ... camera.obj
 	@echo ... camera.i
 	@echo ... camera.s
 	@echo ... command.obj
 	@echo ... command.i
 	@echo ... command.s
+	@echo ... engine.obj
+	@echo ... engine.i
+	@echo ... engine.s
 	@echo ... fsm.obj
 	@echo ... fsm.i
 	@echo ... fsm.s
 	@echo ... graphics.obj
 	@echo ... graphics.i
 	@echo ... graphics.s
+	@echo ... level.obj
+	@echo ... level.i
+	@echo ... level.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
@@ -412,6 +592,15 @@ help:
 	@echo ... player.obj
 	@echo ... player.i
 	@echo ... player.s
+	@echo ... randomness.obj
+	@echo ... randomness.i
+	@echo ... randomness.s
+	@echo ... settings.obj
+	@echo ... settings.i
+	@echo ... settings.s
+	@echo ... sprite.obj
+	@echo ... sprite.i
+	@echo ... sprite.s
 	@echo ... tilemap.obj
 	@echo ... tilemap.i
 	@echo ... tilemap.s

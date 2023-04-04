@@ -10,6 +10,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-3.22/Modules/CMakeCInformation.cmake"
   "C:/Program Files/CMake/share/cmake-3.22/Modules/CMakeCXXInformation.cmake"
   "C:/Program Files/CMake/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake"
+  "C:/Program Files/CMake/share/cmake-3.22/Modules/CMakeFindDependencyMacro.cmake"
   "C:/Program Files/CMake/share/cmake-3.22/Modules/CMakeGenericSystem.cmake"
   "C:/Program Files/CMake/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake"
   "C:/Program Files/CMake/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake"
@@ -44,6 +45,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/msys64/mingw64/lib/cmake/SDL2/SDL2staticTargets.cmake"
   "C:/msys64/mingw64/lib/cmake/SDL2/SDL2testTargets-release.cmake"
   "C:/msys64/mingw64/lib/cmake/SDL2/SDL2testTargets.cmake"
+  "C:/msys64/mingw64/lib/cmake/SDL2_image/sdl2_image-config-version.cmake"
+  "C:/msys64/mingw64/lib/cmake/SDL2_image/sdl2_image-config.cmake"
+  "C:/msys64/mingw64/lib/cmake/SDL2_mixer/sdl2_mixer-config-version.cmake"
+  "C:/msys64/mingw64/lib/cmake/SDL2_mixer/sdl2_mixer-config.cmake"
   )
 
 # The corresponding makefile is:

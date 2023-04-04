@@ -348,8 +348,7 @@ CMakeFiles/main.dir/main.cpp.obj
  C:/msys64/mingw64/include/c++/12.2.0/sstream
  C:/msys64/mingw64/include/c++/12.2.0/bits/sstream.tcc
  C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/command.h
- C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/graphics.h
- C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/player.h
+ C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/engine.h
  C:/msys64/mingw64/include/c++/12.2.0/memory
  C:/msys64/mingw64/include/c++/12.2.0/bits/stl_raw_storage_iter.h
  C:/msys64/mingw64/include/c++/12.2.0/bits/align.h
@@ -365,8 +364,16 @@ CMakeFiles/main.dir/main.cpp.obj
  C:/msys64/mingw64/include/c++/12.2.0/backward/auto_ptr.h
  C:/msys64/mingw64/include/c++/12.2.0/pstl/glue_memory_defs.h
  C:/msys64/mingw64/include/c++/12.2.0/pstl/execution_defs.h
- C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/fsm.h
- C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/physics.h
+ C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/audio.h
+ C:/msys64/mingw64/include/SDL2/SDL_mixer.h
+ C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/graphics.h
+ C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/animatedsprite.h
+ C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/sprite.h
  C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/world.h
  C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/tilemap.h
+ C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/level.h
+ C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/player.h
+ C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/fsm.h
+ C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/physics.h
+ C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/settings.h
 

@@ -347,8 +347,7 @@ CMakeFiles/main.dir/main.cpp.obj: ../main.cpp \
   C:/msys64/mingw64/include/c++/12.2.0/sstream \
   C:/msys64/mingw64/include/c++/12.2.0/bits/sstream.tcc \
   ../command.h \
-  ../graphics.h \
-  ../player.h \
+  ../engine.h \
   C:/msys64/mingw64/include/c++/12.2.0/memory \
   C:/msys64/mingw64/include/c++/12.2.0/bits/stl_raw_storage_iter.h \
   C:/msys64/mingw64/include/c++/12.2.0/bits/align.h \
@@ -364,10 +363,18 @@ CMakeFiles/main.dir/main.cpp.obj: ../main.cpp \
   C:/msys64/mingw64/include/c++/12.2.0/backward/auto_ptr.h \
   C:/msys64/mingw64/include/c++/12.2.0/pstl/glue_memory_defs.h \
   C:/msys64/mingw64/include/c++/12.2.0/pstl/execution_defs.h \
+  ../audio.h \
+  C:/msys64/mingw64/include/SDL2/SDL_mixer.h \
+  ../graphics.h \
+  ../animatedsprite.h \
+  ../sprite.h \
+  ../world.h \
+  ../tilemap.h \
+  ../level.h \
+  ../player.h \
   ../fsm.h \
   ../physics.h \
-  ../world.h \
-  ../tilemap.h
+  ../settings.h
 
 
 C:/msys64/mingw64/include/c++/12.2.0/stdlib.h:
@@ -403,6 +410,8 @@ C:/msys64/mingw64/include/c++/12.2.0/bits/shared_ptr_atomic.h:
 C:/msys64/mingw64/include/c++/12.2.0/tr1/hypergeometric.tcc:
 
 C:/msys64/mingw64/include/SDL2/SDL_main.h:
+
+../settings.h:
 
 C:/msys64/mingw64/include/c++/12.2.0/bits/shared_ptr.h:
 
@@ -794,6 +803,8 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/avx512bwintrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/xtestintrin.h:
 
+C:/msys64/mingw64/include/SDL2/SDL_mixer.h:
+
 C:/msys64/mingw64/include/c++/12.2.0/bits/stl_function.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/hresetintrin.h:
@@ -1054,6 +1065,8 @@ C:/msys64/mingw64/include/c++/12.2.0/bits/deque.tcc:
 
 C:/msys64/mingw64/include/c++/12.2.0/vector:
 
+../animatedsprite.h:
+
 C:/msys64/mingw64/include/c++/12.2.0/bits/stl_vector.h:
 
 C:/msys64/mingw64/include/c++/12.2.0/bits/stl_bvector.h:
@@ -1082,9 +1095,7 @@ C:/msys64/mingw64/include/c++/12.2.0/bits/algorithmfwd.h:
 
 C:/msys64/mingw64/include/c++/12.2.0/bits/uniform_int_dist.h:
 
-../graphics.h:
-
-../player.h:
+../engine.h:
 
 C:/msys64/mingw64/include/c++/12.2.0/memory:
 
@@ -1102,4 +1113,14 @@ C:/msys64/mingw64/include/c++/12.2.0/bits/atomic_lockfree_defines.h:
 
 C:/msys64/mingw64/include/c++/12.2.0/backward/auto_ptr.h:
 
+../audio.h:
+
+../graphics.h:
+
+../sprite.h:
+
 ../world.h:
+
+../level.h:
+
+../player.h:

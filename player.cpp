@@ -3,17 +3,30 @@
 #include <cmath>
 #include <iostream>
 
+#include "engine.h"
 #include "world.h"
 
-Player::Player(const Vec<double>& position, const Vec<int>& size) : size{size} {
+Player::Player(Engine &engine, const Vec<double> &position,
+               const Vec<int> &size)
+    : size{size}
+{
     physics.position = position;
     state = std::make_unique<Standing>();
     state->enter(*this);
+
+    standing = engine.graphics.get_animated_sprite("standing", 0.15, false, false);
+
+    jumping = engine.graphics.get_animated_sprite("jumping", 0.15, false, false);
+    running = engine.graphics.get_animated_sprite("running", 0.15, false, false);
+
+    sprite = standing.get_sprite();
 }
 
-std::unique_ptr<Command> Player::handle_input(const SDL_Event& event) {
+std::unique_ptr<Command> Player::handle_input(const SDL_Event &event)
+{
     auto new_state = state->handle_input(*this, event);
-    if (new_state) {
+    if (new_state)
+    {
         state->exit(*this);
         state = std::move(new_state);
         state->enter(*this);
@@ -47,19 +60,23 @@ std::unique_ptr<Command> Player::handle_input(const SDL_Event& event) {
     // }
 }
 
-void Player::update(World& world, double dt) {
-    auto new_state = state->update(*this, world, dt);
-    if (new_state) {
+void Player::update(Engine &engine, double dt)
+{
+    auto new_state = state->update(*this, engine, dt);
+    if (new_state)
+    {
         state->exit(*this);
         state = std::move(new_state);
         state->enter(*this);
     }
-    if (next_command) {
-        next_command->execute(*this, world);
+    if (next_command)
+    {
+        next_command->execute(*this, engine);
         next_command = nullptr;
     }
 }
 
-std::pair<Vec<double>, Color> Player::get_sprite() const {
+std::pair<Vec<double>, Color> Player::get_sprite() const
+{
     return {physics.position, color};
 }

@@ -173,11 +173,41 @@ CMakeFiles/gamelib.dir/command.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gamelib.dir/command.cpp.s"
 	C:\msys64\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\command.cpp -o CMakeFiles\gamelib.dir\command.cpp.s
 
+CMakeFiles/gamelib.dir/audio.cpp.obj: CMakeFiles/gamelib.dir/flags.make
+CMakeFiles/gamelib.dir/audio.cpp.obj: CMakeFiles/gamelib.dir/includes_CXX.rsp
+CMakeFiles/gamelib.dir/audio.cpp.obj: ../audio.cpp
+CMakeFiles/gamelib.dir/audio.cpp.obj: CMakeFiles/gamelib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/gamelib.dir/audio.cpp.obj"
+	C:\msys64\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamelib.dir/audio.cpp.obj -MF CMakeFiles\gamelib.dir\audio.cpp.obj.d -o CMakeFiles\gamelib.dir\audio.cpp.obj -c C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\audio.cpp
+
+CMakeFiles/gamelib.dir/audio.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gamelib.dir/audio.cpp.i"
+	C:\msys64\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\audio.cpp > CMakeFiles\gamelib.dir\audio.cpp.i
+
+CMakeFiles/gamelib.dir/audio.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gamelib.dir/audio.cpp.s"
+	C:\msys64\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\audio.cpp -o CMakeFiles\gamelib.dir\audio.cpp.s
+
+CMakeFiles/gamelib.dir/animatedsprite.cpp.obj: CMakeFiles/gamelib.dir/flags.make
+CMakeFiles/gamelib.dir/animatedsprite.cpp.obj: CMakeFiles/gamelib.dir/includes_CXX.rsp
+CMakeFiles/gamelib.dir/animatedsprite.cpp.obj: ../animatedsprite.cpp
+CMakeFiles/gamelib.dir/animatedsprite.cpp.obj: CMakeFiles/gamelib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/gamelib.dir/animatedsprite.cpp.obj"
+	C:\msys64\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamelib.dir/animatedsprite.cpp.obj -MF CMakeFiles\gamelib.dir\animatedsprite.cpp.obj.d -o CMakeFiles\gamelib.dir\animatedsprite.cpp.obj -c C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\animatedsprite.cpp
+
+CMakeFiles/gamelib.dir/animatedsprite.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gamelib.dir/animatedsprite.cpp.i"
+	C:\msys64\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\animatedsprite.cpp > CMakeFiles\gamelib.dir\animatedsprite.cpp.i
+
+CMakeFiles/gamelib.dir/animatedsprite.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gamelib.dir/animatedsprite.cpp.s"
+	C:\msys64\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\animatedsprite.cpp -o CMakeFiles\gamelib.dir\animatedsprite.cpp.s
+
 CMakeFiles/gamelib.dir/camera.cpp.obj: CMakeFiles/gamelib.dir/flags.make
 CMakeFiles/gamelib.dir/camera.cpp.obj: CMakeFiles/gamelib.dir/includes_CXX.rsp
 CMakeFiles/gamelib.dir/camera.cpp.obj: ../camera.cpp
 CMakeFiles/gamelib.dir/camera.cpp.obj: CMakeFiles/gamelib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/gamelib.dir/camera.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/gamelib.dir/camera.cpp.obj"
 	C:\msys64\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamelib.dir/camera.cpp.obj -MF CMakeFiles\gamelib.dir\camera.cpp.obj.d -o CMakeFiles\gamelib.dir\camera.cpp.obj -c C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\camera.cpp
 
 CMakeFiles/gamelib.dir/camera.cpp.i: cmake_force
@@ -192,7 +222,7 @@ CMakeFiles/gamelib.dir/tilemap.cpp.obj: CMakeFiles/gamelib.dir/flags.make
 CMakeFiles/gamelib.dir/tilemap.cpp.obj: CMakeFiles/gamelib.dir/includes_CXX.rsp
 CMakeFiles/gamelib.dir/tilemap.cpp.obj: ../tilemap.cpp
 CMakeFiles/gamelib.dir/tilemap.cpp.obj: CMakeFiles/gamelib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/gamelib.dir/tilemap.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/gamelib.dir/tilemap.cpp.obj"
 	C:\msys64\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamelib.dir/tilemap.cpp.obj -MF CMakeFiles\gamelib.dir\tilemap.cpp.obj.d -o CMakeFiles\gamelib.dir\tilemap.cpp.obj -c C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\tilemap.cpp
 
 CMakeFiles/gamelib.dir/tilemap.cpp.i: cmake_force
@@ -203,6 +233,81 @@ CMakeFiles/gamelib.dir/tilemap.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gamelib.dir/tilemap.cpp.s"
 	C:\msys64\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\tilemap.cpp -o CMakeFiles\gamelib.dir\tilemap.cpp.s
 
+CMakeFiles/gamelib.dir/engine.cpp.obj: CMakeFiles/gamelib.dir/flags.make
+CMakeFiles/gamelib.dir/engine.cpp.obj: CMakeFiles/gamelib.dir/includes_CXX.rsp
+CMakeFiles/gamelib.dir/engine.cpp.obj: ../engine.cpp
+CMakeFiles/gamelib.dir/engine.cpp.obj: CMakeFiles/gamelib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/gamelib.dir/engine.cpp.obj"
+	C:\msys64\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamelib.dir/engine.cpp.obj -MF CMakeFiles\gamelib.dir\engine.cpp.obj.d -o CMakeFiles\gamelib.dir\engine.cpp.obj -c C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\engine.cpp
+
+CMakeFiles/gamelib.dir/engine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gamelib.dir/engine.cpp.i"
+	C:\msys64\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\engine.cpp > CMakeFiles\gamelib.dir\engine.cpp.i
+
+CMakeFiles/gamelib.dir/engine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gamelib.dir/engine.cpp.s"
+	C:\msys64\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\engine.cpp -o CMakeFiles\gamelib.dir\engine.cpp.s
+
+CMakeFiles/gamelib.dir/settings.cpp.obj: CMakeFiles/gamelib.dir/flags.make
+CMakeFiles/gamelib.dir/settings.cpp.obj: CMakeFiles/gamelib.dir/includes_CXX.rsp
+CMakeFiles/gamelib.dir/settings.cpp.obj: ../settings.cpp
+CMakeFiles/gamelib.dir/settings.cpp.obj: CMakeFiles/gamelib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/gamelib.dir/settings.cpp.obj"
+	C:\msys64\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamelib.dir/settings.cpp.obj -MF CMakeFiles\gamelib.dir\settings.cpp.obj.d -o CMakeFiles\gamelib.dir\settings.cpp.obj -c C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\settings.cpp
+
+CMakeFiles/gamelib.dir/settings.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gamelib.dir/settings.cpp.i"
+	C:\msys64\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\settings.cpp > CMakeFiles\gamelib.dir\settings.cpp.i
+
+CMakeFiles/gamelib.dir/settings.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gamelib.dir/settings.cpp.s"
+	C:\msys64\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\settings.cpp -o CMakeFiles\gamelib.dir\settings.cpp.s
+
+CMakeFiles/gamelib.dir/level.cpp.obj: CMakeFiles/gamelib.dir/flags.make
+CMakeFiles/gamelib.dir/level.cpp.obj: CMakeFiles/gamelib.dir/includes_CXX.rsp
+CMakeFiles/gamelib.dir/level.cpp.obj: ../level.cpp
+CMakeFiles/gamelib.dir/level.cpp.obj: CMakeFiles/gamelib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/gamelib.dir/level.cpp.obj"
+	C:\msys64\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamelib.dir/level.cpp.obj -MF CMakeFiles\gamelib.dir\level.cpp.obj.d -o CMakeFiles\gamelib.dir\level.cpp.obj -c C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\level.cpp
+
+CMakeFiles/gamelib.dir/level.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gamelib.dir/level.cpp.i"
+	C:\msys64\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\level.cpp > CMakeFiles\gamelib.dir\level.cpp.i
+
+CMakeFiles/gamelib.dir/level.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gamelib.dir/level.cpp.s"
+	C:\msys64\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\level.cpp -o CMakeFiles\gamelib.dir\level.cpp.s
+
+CMakeFiles/gamelib.dir/sprite.cpp.obj: CMakeFiles/gamelib.dir/flags.make
+CMakeFiles/gamelib.dir/sprite.cpp.obj: CMakeFiles/gamelib.dir/includes_CXX.rsp
+CMakeFiles/gamelib.dir/sprite.cpp.obj: ../sprite.cpp
+CMakeFiles/gamelib.dir/sprite.cpp.obj: CMakeFiles/gamelib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/gamelib.dir/sprite.cpp.obj"
+	C:\msys64\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamelib.dir/sprite.cpp.obj -MF CMakeFiles\gamelib.dir\sprite.cpp.obj.d -o CMakeFiles\gamelib.dir\sprite.cpp.obj -c C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\sprite.cpp
+
+CMakeFiles/gamelib.dir/sprite.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gamelib.dir/sprite.cpp.i"
+	C:\msys64\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\sprite.cpp > CMakeFiles\gamelib.dir\sprite.cpp.i
+
+CMakeFiles/gamelib.dir/sprite.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gamelib.dir/sprite.cpp.s"
+	C:\msys64\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\sprite.cpp -o CMakeFiles\gamelib.dir\sprite.cpp.s
+
+CMakeFiles/gamelib.dir/randomness.cpp.obj: CMakeFiles/gamelib.dir/flags.make
+CMakeFiles/gamelib.dir/randomness.cpp.obj: CMakeFiles/gamelib.dir/includes_CXX.rsp
+CMakeFiles/gamelib.dir/randomness.cpp.obj: ../randomness.cpp
+CMakeFiles/gamelib.dir/randomness.cpp.obj: CMakeFiles/gamelib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/gamelib.dir/randomness.cpp.obj"
+	C:\msys64\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamelib.dir/randomness.cpp.obj -MF CMakeFiles\gamelib.dir\randomness.cpp.obj.d -o CMakeFiles\gamelib.dir\randomness.cpp.obj -c C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\randomness.cpp
+
+CMakeFiles/gamelib.dir/randomness.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gamelib.dir/randomness.cpp.i"
+	C:\msys64\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\randomness.cpp > CMakeFiles\gamelib.dir\randomness.cpp.i
+
+CMakeFiles/gamelib.dir/randomness.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gamelib.dir/randomness.cpp.s"
+	C:\msys64\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\randomness.cpp -o CMakeFiles\gamelib.dir\randomness.cpp.s
+
 # Object files for target gamelib
 gamelib_OBJECTS = \
 "CMakeFiles/gamelib.dir/graphics.cpp.obj" \
@@ -212,8 +317,15 @@ gamelib_OBJECTS = \
 "CMakeFiles/gamelib.dir/world.cpp.obj" \
 "CMakeFiles/gamelib.dir/vec.cpp.obj" \
 "CMakeFiles/gamelib.dir/command.cpp.obj" \
+"CMakeFiles/gamelib.dir/audio.cpp.obj" \
+"CMakeFiles/gamelib.dir/animatedsprite.cpp.obj" \
 "CMakeFiles/gamelib.dir/camera.cpp.obj" \
-"CMakeFiles/gamelib.dir/tilemap.cpp.obj"
+"CMakeFiles/gamelib.dir/tilemap.cpp.obj" \
+"CMakeFiles/gamelib.dir/engine.cpp.obj" \
+"CMakeFiles/gamelib.dir/settings.cpp.obj" \
+"CMakeFiles/gamelib.dir/level.cpp.obj" \
+"CMakeFiles/gamelib.dir/sprite.cpp.obj" \
+"CMakeFiles/gamelib.dir/randomness.cpp.obj"
 
 # External object files for target gamelib
 gamelib_EXTERNAL_OBJECTS =
@@ -225,11 +337,18 @@ libgamelib.a: CMakeFiles/gamelib.dir/player.cpp.obj
 libgamelib.a: CMakeFiles/gamelib.dir/world.cpp.obj
 libgamelib.a: CMakeFiles/gamelib.dir/vec.cpp.obj
 libgamelib.a: CMakeFiles/gamelib.dir/command.cpp.obj
+libgamelib.a: CMakeFiles/gamelib.dir/audio.cpp.obj
+libgamelib.a: CMakeFiles/gamelib.dir/animatedsprite.cpp.obj
 libgamelib.a: CMakeFiles/gamelib.dir/camera.cpp.obj
 libgamelib.a: CMakeFiles/gamelib.dir/tilemap.cpp.obj
+libgamelib.a: CMakeFiles/gamelib.dir/engine.cpp.obj
+libgamelib.a: CMakeFiles/gamelib.dir/settings.cpp.obj
+libgamelib.a: CMakeFiles/gamelib.dir/level.cpp.obj
+libgamelib.a: CMakeFiles/gamelib.dir/sprite.cpp.obj
+libgamelib.a: CMakeFiles/gamelib.dir/randomness.cpp.obj
 libgamelib.a: CMakeFiles/gamelib.dir/build.make
 libgamelib.a: CMakeFiles/gamelib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX static library libgamelib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX static library libgamelib.a"
 	$(CMAKE_COMMAND) -P CMakeFiles\gamelib.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\gamelib.dir\link.txt --verbose=$(VERBOSE)
 

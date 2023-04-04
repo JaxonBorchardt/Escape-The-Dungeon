@@ -1,17 +1,18 @@
 #pragma once
 #include "tilemap.h"
 #include "vec.h"
+#include "level.h"
+class Level;
+class World
+{
+public:
+   World(const Level &level);
 
-class World {
-   public:
-    World(int width, int height);
+   void add_platform(int x, int y, int width, int height);
+   void move_to(Vec<double> &position, const Vec<int> &size,
+                Vec<double> &velocity);
+   bool collides(const Vec<double> &position) const;
 
-    void add_platform(int x, int y, int width, int height);
-    void move_to(Vec<double>& position, const Vec<int>& size,
-                 Vec<double>& velocity);
-    bool collides(const Vec<double>& position) const;
-
-    Tilemap tilemap;
-
-   private:
+   Tilemap tilemap;
+   std::vector<std::pair<Sprite, int>> backgrounds;
 };
