@@ -15,7 +15,7 @@ level_03_theme.txt
 |         qwe                                               |
 |@#       rty                                               |
 |hjk                                                        |
-|qwe     # @ #1@                                            |
+|qwe     # @z#1@                                            |
 |rty    hjjjjjjjk                                           |
 |       qwwwwwwwe          z2!##                            |
 |       rttttttty       hjjjjjjjjk                          |
