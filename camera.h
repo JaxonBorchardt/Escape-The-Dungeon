@@ -6,7 +6,7 @@ class Graphics;
 class Tilemap;
 class Color;
 class Sprite;
-class Player;
+class Object;
 class Physics;
 
 class Camera
@@ -21,8 +21,10 @@ public:
                 bool filled = true) const;
     void render(const Tilemap &tilemap, bool grid_on = false) const;
     void render(const Vec<double> &position, const Sprite &sprite) const;
-    void render(const Player &player) const;
+    void render(const Object &object) const;
     void render(const std::vector<std::pair<Sprite, int>> &backgrounds) const;
+
+    void render_life(int life, int max_life);
 
 private:
     Graphics &graphics;

@@ -2,6 +2,7 @@
 
 #include "command.h"
 #include "engine.h"
+#include "randomness.h"
 #include "player.h"
 #include "world.h"
 
@@ -28,6 +29,13 @@ std::unique_ptr<State> State::update(Player &player, Engine &engine,
     // update position and velocity of player
     player.physics.position = future;
     player.physics.velocity = {vx.x, vy.y};
+
+    // see if we touch a tile with a command
+    auto command = engine.world->touch_tiles(player);
+    if (command)
+    {
+        command->execute(player, engine);
+    }
 
     return nullptr;
 }
@@ -86,12 +94,26 @@ std::unique_ptr<State> Standing::handle_input(Player &player,
         {
             return std::make_unique<Running>(-player.walk_acceleration);
         }
-        // if (event.type == SDL_KEYUP) {
-        //     SDL_Keycode key = event.key.keysym.sym;
-        //     if (key == SDLK_RIGHT || key == SDLK_LEFT) {
-        //         return std::make_unique<Standing>();
-        //     }
-        // }
+        else if (key == SDLK_s)
+        {
+            return std::make_unique<Attacking>();
+        }
+        else if (key == SDLK_q)
+        {
+            return std::make_unique<AttackAll>();
+        }
+        else if (key == SDLK_f)
+        {
+            Vec<double> position{player.physics.position.x + player.size.x / 1.5, player.physics.position.y + player.size.y / 1.5};
+            Vec<double> velocity{1200, 1};
+
+            if (player.sprite.flip)
+            {
+                position = {player.physics.position.x, player.physics.position.y + player.size.y / 1.5};
+                velocity.x *= -1;
+            }
+            player.next_command = std::make_unique<FireProjectile>(player.ninja_star, position, velocity);
+        }
     }
     return nullptr;
 }
@@ -101,40 +123,23 @@ std::unique_ptr<State> Standing::update(Player &player, Engine &engine,
     State::update(player, engine, dt);
     player.physics.velocity.x *= damping;
 
-    player.standing.update(dt);
-    player.sprite = player.standing.get_sprite();
-    // if (on_platform) {
-    //     player.physics.velocity.y *= damping;
-    // }
-    // Vec<double> left_foot{player.physics.position.x,
-    //                       player.physics.position.y - 1e-2};
-    // Vec<double> right_foot{player.physics.position.x + player.size.x,
-    //                        player.physics.position.y - 1e-2};
-    // if (world.collides(left_foot) && !(world.collides(right_foot))) {
-    //     player.physics.velocity.y = 0;
-    // }
-
-    if (on_left_wall(player, engine) || on_right_wall(player, engine))
-    {
-        return std::make_unique<OnWall>();
-    }
-
-    // slide off a platform, return new state?
+    player.fox_standing.update(dt);
+    player.sprite = player.fox_standing.get_sprite();
     return nullptr;
 }
 
 void Standing::enter(Player &player)
 {
     player.next_command = std::make_unique<Stop>();
-    player.standing.reset();
-    player.standing.flip(player.sprite.flip);
+    player.fox_standing.reset();
+    player.fox_standing.flip(player.sprite.flip);
 }
 
 /////////
 // Running
 ////////
 
-std::unique_ptr<State> Running::handle_input(Player &, const SDL_Event &event)
+std::unique_ptr<State> Running::handle_input(Player &player, const SDL_Event &event)
 {
     if (event.type == SDL_KEYDOWN)
     {
@@ -143,11 +148,22 @@ std::unique_ptr<State> Running::handle_input(Player &, const SDL_Event &event)
         {
             return std::make_unique<Jumping>();
         }
-        // if (key == SDLK_RIGHT) {
-        //     player.physics.acceleration.x = player.walk_acceleration;
-        // } else if (key == SDLK_LEFT) {
-        //     player.physics.acceleration.x = -player.walk_acceleration;
-        // }
+        else if (key == SDLK_s)
+        {
+            return std::make_unique<Attacking>();
+        }
+        else if (key == SDLK_f)
+        {
+            Vec<double> position{player.physics.position.x + player.size.x / 1.5, player.physics.position.y + player.size.y / 1.5};
+            Vec<double> velocity{1200, 1};
+
+            if (player.sprite.flip)
+            {
+                position = {player.physics.position.x, player.physics.position.y + player.size.y / 1.5};
+                velocity.x *= -1;
+            }
+            player.next_command = std::make_unique<FireProjectile>(player.ninja_star, position, velocity);
+        }
     }
     if (event.type == SDL_KEYUP)
     {
@@ -163,35 +179,20 @@ std::unique_ptr<State> Running::update(Player &player, Engine &engine,
                                        double dt)
 {
     State::update(player, engine, dt);
-    player.running.update(dt);
-    player.sprite = player.running.get_sprite();
+    player.fox_running.update(dt);
+    player.sprite = player.fox_running.get_sprite();
 
     if (player.physics.velocity.x == 0)
     {
         return std::make_unique<Standing>();
     }
-    // if (!on_platform(player, world)) {  // run off platform
-    //     return std::make_unique<InAir>();
-    // }
-
-    if (on_left_wall(player, engine) || on_right_wall(player, engine))
-    {
-        return std::make_unique<OnWall>();
-    }
-    // Vec<double> left_foot{player.physics.position.x,
-    //                       player.physics.position.y - 1e-2};
-    // Vec<double> right_foot{player.physics.position.x + player.size.x,
-    //                        player.physics.position.y - 1e-2};
-    // if (world.collides(left_foot) && !(world.collides(right_foot))) {
-    //     return std::make_unique<OnWall>();
-    // }
     return nullptr;
 }
 void Running::enter(Player &player)
 {
     player.next_command = std::make_unique<Run>(acceleration);
-    player.running.reset();
-    player.running.flip(acceleration < 0);
+    player.fox_running.reset();
+    player.fox_running.flip(acceleration < 0);
 }
 void Running::exit(Player &player) { player.physics.acceleration.x = 0; }
 
@@ -207,17 +208,29 @@ std::unique_ptr<State> Jumping::handle_input(Player &player,
     if (event.type == SDL_KEYDOWN)
     {
         SDL_Keycode key = event.key.keysym.sym;
-        if (key == SDLK_SPACE || key == SDLK_UP)
+        if (key == SDLK_RIGHT)
         {
-            return std::make_unique<Jumping>();
-        }
-        else if (key == SDLK_RIGHT)
-        {
-            return std::make_unique<Running>(player.walk_acceleration / 4);
+            return std::make_unique<Running>(player.walk_acceleration / 2);
         }
         else if (key == SDLK_LEFT)
         {
-            return std::make_unique<Running>(-player.walk_acceleration / 4);
+            return std::make_unique<Running>(-player.walk_acceleration / 2);
+        }
+        else if (key == SDLK_s)
+        {
+            return std::make_unique<Attacking>();
+        }
+        else if (key == SDLK_f)
+        {
+            Vec<double> position{player.physics.position.x + player.size.x / 1.5, player.physics.position.y + player.size.y / 1.5};
+            Vec<double> velocity{1200, 1};
+
+            if (player.sprite.flip)
+            {
+                position = {player.physics.position.x, player.physics.position.y + player.size.y / 1.5};
+                velocity.x *= -1;
+            }
+            player.next_command = std::make_unique<FireProjectile>(player.ninja_star, position, velocity);
         }
     }
     return nullptr;
@@ -227,52 +240,30 @@ std::unique_ptr<State> Jumping::update(Player &player, Engine &engine,
                                        double dt)
 {
     State::update(player, engine, dt);
-    player.jumping.update(dt);
-    player.sprite = player.jumping.get_sprite();
+    player.fox_jumping.update(dt);
+    player.sprite = player.fox_jumping.get_sprite();
 
     if (player.physics.velocity.y == 0)
     {
         return std::make_unique<Standing>();
     }
-    // Vec<double> left_foot{player.physics.position.x,
-    //                       player.physics.position.y - 1e-2};
-    // if (world.collides(left_foot)) {
-    //     return std::make_unique<Standing>();
-    // }
-
-    // Vec<double> left_foot{player.physics.position.x,
-    //                       player.physics.position.y - 1e-2};
-    // Vec<double> right_foot{player.physics.position.x + player.size.x,
-    //                        player.physics.position.y - 1e-2};
-    // if (world.collides(left_foot) && !(world.collides(right_foot))) {
-    //     return std::make_unique<OnWall>();
-    // }
-
-    if (on_left_wall(player, engine) || on_right_wall(player, engine))
-    {
-        return std::make_unique<OnWall>();
-    }
-
-    // if(!collides){InAir}
     return nullptr;
 }
 
 void Jumping::enter(Player &player)
 {
     player.next_command = std::make_unique<Jump>(player.jump_velocity);
-    player.jumping.flip(player.sprite.flip);
+    player.fox_jumping.reset();
+    player.fox_jumping.flip(player.sprite.flip);
 }
 
 /////////
-// OnWall
+// Attack
 ////////
 
-std::unique_ptr<State> OnWall::handle_input(Player &player,
-                                            const SDL_Event &event)
+std::unique_ptr<State> Attacking::handle_input(Player &player,
+                                               const SDL_Event &event)
 {
-    // reduced movement in left and right direcitons
-    // space -> add a small vy
-    // down -> drop faster
     if (event.type == SDL_KEYDOWN)
     {
         SDL_Keycode key = event.key.keysym.sym;
@@ -282,70 +273,125 @@ std::unique_ptr<State> OnWall::handle_input(Player &player,
         }
         else if (key == SDLK_RIGHT)
         {
-            return std::make_unique<Running>(player.walk_acceleration / 4);
+            return std::make_unique<Running>(player.walk_acceleration / 2);
         }
         else if (key == SDLK_LEFT)
         {
-            return std::make_unique<Running>(-player.walk_acceleration / 4);
+            return std::make_unique<Running>(-player.walk_acceleration / 2);
         }
     }
     return nullptr;
 }
 
-std::unique_ptr<State> OnWall::update(Player &player, Engine &engine,
-                                      double dt)
+std::unique_ptr<State> Attacking::update(Player &player, Engine &engine,
+                                         double dt)
 {
     State::update(player, engine, dt);
-    player.physics.velocity.y = 0;
+    player.fox_attacking.update(dt);
+    player.sprite = player.fox_attacking.get_sprite();
 
-    // if (player.physics.velocity.y == 0)
-    // {
-    //     return std::make_unique<Standing>();
-    // }
-    // Vec<double> left_foot{player.physics.position.x,
-    //                       player.physics.position.y - 1e-2};
-    // Vec<double> right_foot{player.physics.position.x + player.size.x,
-    //                        player.physics.position.y - 1e-2};
-    // if (world.collides(left_foot) && !(world.collides(right_foot))) {
-    //     return std::make_unique<OnWall>();
-    // }
-    // if(!collides){InAir}
+    for (auto enemy : engine.world->enemies)
+    {
+        player.combat.attack(*enemy);
+    }
+
     return nullptr;
 }
 
-void OnWall::enter(Player &player)
+void Attacking::enter(Player &player)
 {
-    player.next_command = std::make_unique<Wall>();
+    player.next_command = std::make_unique<Attack>();
+    player.fox_attacking.reset();
+    player.fox_attacking.flip(player.sprite.flip);
 }
 
-////////
-// InAir
-////////
+/////////
+// AttackAll
+//////////
 
-// std::unique_ptr<State> InAir::handle_input(Player& player,
-//                                            const SDL_Event& event) {
-//     if (event.type == SDL_KEYDOWN) {
-//         SDL_Keycode key = event.key.keysym.sym;
-//         if (key == SDLK_SPACE || key == SDLK_UP) {
-//             return std::make_unique<Jumping>();
-//         } else if (key == SDLK_RIGHT) {
-//             return std::make_unique<Running>(player.walk_acceleration / 4);
-//         } else if (key == SDLK_LEFT) {
-//             return std::make_unique<Running>(-player.walk_acceleration / 4);
-//         }
-//     }
-//     return nullptr;
-// }
+std::unique_ptr<State> AttackAll::handle_input(Player &,
+                                               const SDL_Event &event)
+{
+    if (event.type == SDL_KEYUP)
+    {
+        SDL_Keycode key = event.key.keysym.sym;
+        if (key == SDLK_q)
+        {
+            return std::make_unique<Standing>();
+        }
+    }
+    return nullptr;
+}
 
-// std::unique_ptr<State> InAir::update(Player& player, Engine& engine, double
-// dt)
-// {
-//     State::update(player, world, dt);
-//     return nullptr;
-// }
+std::unique_ptr<State> AttackAll::update(Player &player, Engine &engine,
+                                         double)
+{
+    for (auto enemy : engine.world->enemies)
+    {
+        player.combat.attack(*enemy);
+    }
+    return std::make_unique<Standing>();
+}
 
-// void InAir::enter(Player& player) {
-//     player.next_command = std::make_unique<Air>();
-// }
+void AttackAll::enter(Player &) {}
 
-// void exit(Player& player) { player.physics.acceleration.y = 0; }
+////////////
+// Hurting
+///////////
+
+std::unique_ptr<State> Hurting::handle_input(Player &player,
+                                             const SDL_Event &event)
+{
+    if (event.type == SDL_KEYDOWN)
+    {
+        SDL_Keycode key = event.key.keysym.sym;
+        if (key == SDLK_LEFT)
+        {
+            player.next_command = std::make_unique<Run>(-player.walk_acceleration / 2);
+            player.sprite.flip = true;
+        }
+        else if (key == SDLK_RIGHT)
+        {
+            player.next_command = std::make_unique<Run>(player.walk_acceleration / 2);
+            player.sprite.flip = false;
+        }
+    }
+    if (event.type == SDL_KEYUP)
+    {
+        SDL_Keycode key = event.key.keysym.sym;
+        if (key == SDLK_LEFT || key == SDLK_RIGHT)
+        {
+            player.next_command = std::make_unique<Run>(0);
+        }
+    }
+    return nullptr;
+}
+
+std::unique_ptr<State> Hurting::update(Player &player, Engine &engine,
+                                       double dt)
+{
+    elapsed_time += dt;
+    if (elapsed_time >= cooldown)
+    {
+        return std::make_unique<Standing>();
+    }
+
+    State::update(player, engine, dt);
+    player.fox_hurting.update(dt);
+    player.sprite = player.fox_hurting.get_sprite();
+    player.physics.apply_friction(damping);
+
+    return nullptr;
+}
+
+void Hurting::enter(Player &player)
+{
+    elapsed_time = 0;
+    player.combat.invincible = true;
+}
+
+void Hurting::exit(Player &player)
+{
+    player.combat.invincible = false;
+}
+

@@ -1,0 +1,25 @@
+load-spritesheet my_tileset.txt
+load-spritesheet fox.txt
+load-spritesheet rat.txt
+load-spritesheet my_characters.txt
+load-sounds level_01_sounds.txt
+
+
+enemy r rat
+enemy R rat_running
+
+tile s stone_center true
+tile d dark_stone false
+tile a light_stone false 
+
+
+tile b barrel false health_tile
+tile c ball_chain false
+tile i candel false
+tile p spikes false damage_tile
+tile w wall_axe false
+tile z apple false health_tile
+
+tile g closed_gate false
+tile o open_gate false load_level level-02.txt
+tile n open_door false load_level level-04.txt

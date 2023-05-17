@@ -330,7 +330,10 @@ CMakeFiles/gamelib.dir/camera.cpp.obj: \
  C:/msys64/mingw64/include/SDL2/SDL_misc.h \
  C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\animatedsprite.h \
  C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\sprite.h \
- C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\player.h \
+ C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\object.h \
+ C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\physics.h \
+ C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\combat.h \
+ C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\tilemap.h \
  C:/msys64/mingw64/include/c++/12.2.0/memory \
  C:/msys64/mingw64/include/c++/12.2.0/bits/stl_raw_storage_iter.h \
  C:/msys64/mingw64/include/c++/12.2.0/bits/align.h \
@@ -347,6 +350,4 @@ CMakeFiles/gamelib.dir/camera.cpp.obj: \
  C:/msys64/mingw64/include/c++/12.2.0/pstl/glue_memory_defs.h \
  C:/msys64/mingw64/include/c++/12.2.0/pstl/execution_defs.h \
  C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\command.h \
- C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\fsm.h \
- C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\physics.h \
- C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\tilemap.h
+ C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\projectile.h

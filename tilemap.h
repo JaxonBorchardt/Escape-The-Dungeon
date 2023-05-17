@@ -1,12 +1,14 @@
 #pragma once
 #include <vector>
 #include "sprite.h"
-
+#include <memory>
+#include "command.h"
 class Tile
 {
 public:
     Sprite sprite;
     bool blocking{false};
+    std::shared_ptr<Command> command{nullptr};
 };
 
 class Tilemap

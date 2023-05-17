@@ -1,7 +1,7 @@
 #include "camera.h"
 
 #include "graphics.h"
-#include "player.h"
+#include "object.h"
 #include "tilemap.h"
 #include "physics.h"
 
@@ -66,11 +66,6 @@ void Camera::render(const Tilemap &tilemap, bool grid_on) const
             Vec<double> position{static_cast<double>(x),
                                  static_cast<double>(y)};
             render(position, tile.sprite);
-            // if (tile == Tile::Platform) {
-            //     render(position, Color{170, 255, 0, 255});
-            // } else {
-            //     render(position, Color{0, 127, 127, 255});
-            // }
             if (grid_on)
             {
                 render(position, Color{0, 0, 0, 255}, false);
@@ -87,10 +82,10 @@ void Camera::render(const Vec<double> &position, const Sprite &sprite) const
     graphics.draw_sprite(pixel, sprite);
 }
 
-void Camera::render(const Player &player) const
+void Camera::render(const Object &object) const
 {
-    render(player.physics.position, player.color);
-    render(player.physics.position, player.sprite);
+
+    render(object.physics.position, object.sprite);
 }
 
 void Camera::render(const std::vector<std::pair<Sprite, int>> &backgrounds) const
@@ -98,7 +93,28 @@ void Camera::render(const std::vector<std::pair<Sprite, int>> &backgrounds) cons
     for (auto [sprite, distance] : backgrounds)
     {
         int shift = static_cast<int>(location.x / distance);
-        graphics.draw_sprite({-shift, 0}, sprite);
+        int shift_y = static_cast<int>(location.y / distance);
+        graphics.draw_sprite({-shift, shift_y}, sprite);
+    }
+}
+
+void Camera::render_life(int life, int max_life)
+{
+    Sprite heart = graphics.get_sprite("heart");
+    Sprite empty_heart = graphics.get_sprite("empty_heart");
+
+    for (int i = 0; i < life; ++i)
+    {
+        Vec<int> position{35, 65};
+        position.x += i * 64 + 10;
+        graphics.draw_sprite(position, heart);
+    }
+
+    for (int i = life; i < max_life; ++i)
+    {
+        Vec<int> position{35, 65};
+        position.x += i * 64 + 10;
+        graphics.draw_sprite(position, empty_heart);
     }
 }
 

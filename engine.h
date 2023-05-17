@@ -1,6 +1,7 @@
 #pragma once
 
 #include <memory>
+#include <optional>
 
 #include "audio.h"
 #include "camera.h"
@@ -17,6 +18,9 @@ public:
     Engine(const Settings &settings);
     void load_level(const std::string &level_filename);
     void run();
+    void stop();
+
+    void setup_end_screen();
 
     Graphics graphics;
     Camera camera;
@@ -24,6 +28,8 @@ public:
     Audio audio;
 
     std::shared_ptr<Player> player;
+
+    std::optional<std::string> next_level;
 
 private:
     bool grid_on{false};

@@ -14,5 +14,18 @@ knight_running 192 96 16 32 6 4
 knight_jumping 208 96 16 32 6
 knight_falling 256 96 16 32 6
 
+monster_standing 16 368 32 32 6 4
+monster_running 144 368 32 32 6 4
+
+troll_standing 16 272 32 32 6 4
+troll_running 144 272 32 32 6 4
+
+hole 96 144 16 16 4
+treasure_chest 336 304 16 16 4 
+
+arrow 308 186 7 21 4
+
+heart 288 256 16 16 4
+empty_heart 320 256 16 16 4
 
 

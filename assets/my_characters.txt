@@ -1,5 +1,6 @@
-sprites.xcf
+archer.xcf
 
 standing 0 0 80 56 2 4
 running 80 64 80 50 2 6
 jumping 0 123 80 53 2 10 
+attacking 0 160 64 32 3 9

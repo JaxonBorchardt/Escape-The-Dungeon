@@ -3,3 +3,4 @@ screen_width 1280
 screen_height 720
 tilesize 64
 starting_level assets/level-00.txt
+first_level assets/level-01.txt

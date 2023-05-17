@@ -1,0 +1,26 @@
+level_01_theme.txt
+
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+s                                                                                    s
+s                                                                                    s
+s             n     R c            c                                                 s
+sssssssssssssssssssssssssssss                                                        s
+ssssssssssssssssssssssssssssss                                                       s
+s                       sssssssssssssss                                              s
+s                      isssssssssssssss                                              s
+s           bb                 sssssssssssss                                         s
+s           bb                 sssssssssssss    r                                    s
+sssssssssssssssssssssssssssssssssssssssssssssssssssssss                        R     s
+s                                                ss                     ssssssssssssss
+s                                                ss                                  s
+s     c         c                                ssssssssss                          s
+s                                                ss                          c       s
+sb                 ssssssssssss                  ss                                  s
+sbb     r                     s                  ss                   ssssssssssssssss
+sssssssssss                  issssss             sssssssss                           s
+sssssssssss                   s                  ss                                  s
+s                         b   s            ssssssss                        R         s
+s               sssssssssssssss                                  sssssssssssssssssssss
+s      P  g     sssssssssssssss             R                    sssssssssssssssssssss
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss   
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss

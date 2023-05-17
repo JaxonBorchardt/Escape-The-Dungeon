@@ -1,0 +1,2 @@
+load-sounds sounds.txt
+background game_over1.xcf 3 3

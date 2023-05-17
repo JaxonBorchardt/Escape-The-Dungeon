@@ -1,0 +1,55 @@
+AssetPack1.xcf
+
+stone_center 320 112 16 16 4
+
+dark_stone 239 109 16 16 4
+
+light_stone 259 73 16 16 4
+
+my_grass_left 320 0 16 16 4
+my_grass_center 336 0 16 16 4
+my_grass_right 352 0 16 16 4
+
+grass_bottom_left 320 48 16 16 4
+grass_bottom_center 336 48 16 16 4
+grass_bottom_right 352 48 16 16 4
+
+my_dirt_left 320 16 16 16 4
+my_dirt_center 336 16 16 16 4
+my_dirt_right 352 16 16 16 4
+
+my_dirt_bottom_left 320 32 16 16 4
+my_dirt_bottom_center 336 32 16 16 4
+my_dirt_bottom_right 352 32 16 16 4
+
+boundary_wall 112 0 16 16 4
+
+my_tree 96 48 48 48 4
+
+my_bush 160 112 16 16 4
+
+flower 160 128 16 16 4
+
+barrel 160 32 16 16 4
+
+ladder 160 144 17 32 4
+
+ball_chain 192 145 16 47 4
+
+candel 164 52 9 12 7
+
+spikes 208 101 15 11 3
+
+closed_gate 96 96 32 48 3
+
+open_gate 96 144 32 48 3
+
+wall_axe 176 144 15 32 3
+
+apple 197 114 23 27 2
+
+open_door 128 144 32 48 3
+
+red_flag 64 96 32 64 3
+
+ripped_flag 320 128 32 64 3

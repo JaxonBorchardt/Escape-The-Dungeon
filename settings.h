@@ -14,6 +14,7 @@ public:
     int screen_width, screen_height;
     int titlesize;
     std::string starting_level;
+    std::string first_level;
     std::string load_sounds;
     // sprites
 

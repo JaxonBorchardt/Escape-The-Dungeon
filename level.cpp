@@ -61,14 +61,22 @@ void Level::load(Graphics &graphics, Audio &audio)
             }
             // determine the tile type
             auto it = tile_types.find(symbol);
+            auto eit = enemy_types.find(symbol);
             if (it != tile_types.end())
             {
                 Vec<int> position{x, height - y - 1};
                 const Tile &tile = it->second;
                 tiles.push_back({position, tile});
             }
+            else if (eit != enemy_types.end())
+            {
+                Vec<double> position{static_cast<double>(x), static_cast<double>(height - 1 - y)};
+                const EnemyType type = eit->second(graphics);
+                enemies.push_back({position, type});
+            }
             else
             { // error
+                throw std::runtime_error("Invalid tile type: " + std::to_string(symbol));
             }
         }
     }
@@ -78,61 +86,110 @@ void Level::load(Graphics &graphics, Audio &audio)
 void Level::load_theme(const std::string &theme_filename, Graphics &graphics, Audio &audio)
 {
     std::ifstream input{"assets/" + theme_filename};
-    // error if cant open
+
     if (!input)
     {
-        throw std::runtime_error("level::load_theme Could not open file: " + filename);
+        throw std::runtime_error("Unable to open " + theme_filename);
     }
 
-    std::string command;
-    for (int line = 0; input >> command; ++line)
+    // nicely formatted error message
+    auto error_message = [](std::string filename, int line_num, std::string message, std::string line)
     {
+        return filename + ":" + std::to_string(line_num) + " " + message + ": " + line;
+    };
+
+    int line_num{1};
+    for (std::string line; std::getline(input, line); ++line_num)
+    {
+        if (line.empty())
+        {
+            continue;
+        }
+        std::stringstream ss{line};
+        std::string command;
+        ss >> command;
         if (command == "load-spritesheet")
         {
             std::string filename;
-            input >> filename; // if you cant, error
-            graphics.load_spritesheet("assets/" + filename);
-            if (!input)
+            ss >> filename;
+            if (!ss)
             {
-                throw std::runtime_error("load-spritesheet Could not open file: " + filename);
+                std::string msg = error_message(theme_filename, line_num, "Unable to load spritesheet", line);
+                throw std::runtime_error(msg);
             }
+            graphics.load_spritesheet("assets/" + filename);
         }
         else if (command == "load-sounds")
         {
             std::string filename;
-            input >> filename; // if you cant, error
-            audio.load_sounds("assets/" + filename);
-            if (!input)
+            ss >> filename;
+            if (!ss)
             {
-                throw std::runtime_error("load-sounds Could not open file: " + filename);
+                std::string msg = error_message(theme_filename, line_num, "Unable to load sounds", line);
+                throw std::runtime_error(msg);
             }
+            audio.load_sounds("assets/" + filename);
         }
-        else if (command == "backgorund")
+        else if (command == "background")
         {
             std::string filename;
-            int distance;
-            input >> filename >> distance; // error handle
-            Sprite background = graphics.load_image("assets/" + filename);
-            if (!input)
+            int scale, distance;
+            ss >> filename >> scale >> distance;
+            if (!ss)
             {
-                throw std::runtime_error("background Could not open file: " + filename);
+                std::string msg = error_message(theme_filename, line_num, "Unable to load background", line);
+                throw std::runtime_error(msg);
             }
-            background.scale = 5; // FIX ME!!
+            Sprite background = graphics.load_image("assets/" + filename);
+            background.scale = scale;
             backgrounds.push_back({background, distance});
+        }
+        else if (command == "enemy")
+        {
+            char symbol;
+            std::string type_name;
+
+            ss >> symbol >> type_name;
+            if (!ss)
+            {
+                std::string msg = error_message(theme_filename, line_num, "unable to load enemy", line);
+                throw std::runtime_error(msg);
+            }
+            auto generate_enemy_type = [=](Graphics &graphics)
+            { return create_enemy_type(graphics, type_name); };
+            enemy_types[symbol] = generate_enemy_type;
         }
         else if (command == "tile")
         {
             char symbol;
             std::string sprite_name;
             bool blocking;
-            input >> symbol >> sprite_name >> std::boolalpha >> blocking; // error handle
+            ss >> symbol >> sprite_name >> std::boolalpha >> blocking;
+            if (!ss)
+            {
+                std::string msg = error_message(theme_filename, line_num, "Unable to load tile", line);
+                throw std::runtime_error(msg);
+            }
             Sprite sprite = graphics.get_sprite(sprite_name);
-            tile_types[symbol] = Tile{sprite, blocking};
+            Tile tile{sprite, blocking};
+            // read possible commands
+            std::string command_name;
+            if (ss >> command_name)
+            {
+                std::vector<std::string> arguments;
+                for (std::string argument; ss >> argument;)
+                {
+                    arguments.push_back(argument);
+                }
+                tile.command = create_command(command_name, arguments);
+            }
+
+            tile_types[symbol] = tile;
         }
         else
         {
-            // error unknown command on line
-            // filename:line "error message"
+            std::string msg = error_message(theme_filename, line_num, "Unknown command", line);
+            throw std::runtime_error(msg);
         }
     }
 }

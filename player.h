@@ -8,11 +8,13 @@
 #include "command.h"
 #include "fsm.h"
 #include "graphics.h"
+#include "object.h"
 #include "physics.h"
+#include "projectile.h"
 // forward declaration
 class World;
 
-class Player
+class Player : public Object
 {
 public:
     Player(Engine &engine, const Vec<double> &position, const Vec<int> &size);
@@ -20,17 +22,24 @@ public:
     void update(Engine &engine, double dt);
     std::pair<Vec<double>, Color> get_sprite() const;
 
-    Physics physics;
-    const double walk_acceleration = 25;
+    const double walk_acceleration = 8;
     const double jump_velocity = 7;
     Vec<int> size;
     Color color{255, 0, 0, 255};
 
-    Sprite sprite;
     AnimatedSprite standing;
     AnimatedSprite jumping;
     AnimatedSprite running;
+    AnimatedSprite attacking;
+
+    AnimatedSprite fox_standing;
+    AnimatedSprite fox_running;
+    AnimatedSprite fox_jumping;
+    AnimatedSprite fox_attacking;
+    AnimatedSprite fox_hurting;
 
     std::unique_ptr<State> state;
     std::unique_ptr<Command> next_command;
+
+      Projectile ninja_star;
 };

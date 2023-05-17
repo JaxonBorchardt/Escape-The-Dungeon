@@ -213,6 +213,30 @@ camera.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/camera.cpp.s
 .PHONY : camera.cpp.s
 
+combat.obj: combat.cpp.obj
+.PHONY : combat.obj
+
+# target to build an object file
+combat.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/combat.cpp.obj
+.PHONY : combat.cpp.obj
+
+combat.i: combat.cpp.i
+.PHONY : combat.i
+
+# target to preprocess a source file
+combat.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/combat.cpp.i
+.PHONY : combat.cpp.i
+
+combat.s: combat.cpp.s
+.PHONY : combat.s
+
+# target to generate assembly for a file
+combat.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/combat.cpp.s
+.PHONY : combat.cpp.s
+
 command.obj: command.cpp.obj
 .PHONY : command.obj
 
@@ -236,6 +260,54 @@ command.s: command.cpp.s
 command.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/command.cpp.s
 .PHONY : command.cpp.s
+
+enemy.obj: enemy.cpp.obj
+.PHONY : enemy.obj
+
+# target to build an object file
+enemy.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/enemy.cpp.obj
+.PHONY : enemy.cpp.obj
+
+enemy.i: enemy.cpp.i
+.PHONY : enemy.i
+
+# target to preprocess a source file
+enemy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/enemy.cpp.i
+.PHONY : enemy.cpp.i
+
+enemy.s: enemy.cpp.s
+.PHONY : enemy.s
+
+# target to generate assembly for a file
+enemy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/enemy.cpp.s
+.PHONY : enemy.cpp.s
+
+enemytype.obj: enemytype.cpp.obj
+.PHONY : enemytype.obj
+
+# target to build an object file
+enemytype.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/enemytype.cpp.obj
+.PHONY : enemytype.cpp.obj
+
+enemytype.i: enemytype.cpp.i
+.PHONY : enemytype.i
+
+# target to preprocess a source file
+enemytype.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/enemytype.cpp.i
+.PHONY : enemytype.cpp.i
+
+enemytype.s: enemytype.cpp.s
+.PHONY : enemytype.s
+
+# target to generate assembly for a file
+enemytype.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/enemytype.cpp.s
+.PHONY : enemytype.cpp.s
 
 engine.obj: engine.cpp.obj
 .PHONY : engine.obj
@@ -333,6 +405,30 @@ level.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/level.cpp.s
 .PHONY : level.cpp.s
 
+loadscreen.obj: loadscreen.cpp.obj
+.PHONY : loadscreen.obj
+
+# target to build an object file
+loadscreen.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/loadscreen.cpp.obj
+.PHONY : loadscreen.cpp.obj
+
+loadscreen.i: loadscreen.cpp.i
+.PHONY : loadscreen.i
+
+# target to preprocess a source file
+loadscreen.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/loadscreen.cpp.i
+.PHONY : loadscreen.cpp.i
+
+loadscreen.s: loadscreen.cpp.s
+.PHONY : loadscreen.s
+
+# target to generate assembly for a file
+loadscreen.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/loadscreen.cpp.s
+.PHONY : loadscreen.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -356,6 +452,30 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+object.obj: object.cpp.obj
+.PHONY : object.obj
+
+# target to build an object file
+object.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/object.cpp.obj
+.PHONY : object.cpp.obj
+
+object.i: object.cpp.i
+.PHONY : object.i
+
+# target to preprocess a source file
+object.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/object.cpp.i
+.PHONY : object.cpp.i
+
+object.s: object.cpp.s
+.PHONY : object.s
+
+# target to generate assembly for a file
+object.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/object.cpp.s
+.PHONY : object.cpp.s
 
 physics.obj: physics.cpp.obj
 .PHONY : physics.obj
@@ -404,6 +524,54 @@ player.s: player.cpp.s
 player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/player.cpp.s
 .PHONY : player.cpp.s
+
+projectile.obj: projectile.cpp.obj
+.PHONY : projectile.obj
+
+# target to build an object file
+projectile.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/projectile.cpp.obj
+.PHONY : projectile.cpp.obj
+
+projectile.i: projectile.cpp.i
+.PHONY : projectile.i
+
+# target to preprocess a source file
+projectile.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/projectile.cpp.i
+.PHONY : projectile.cpp.i
+
+projectile.s: projectile.cpp.s
+.PHONY : projectile.s
+
+# target to generate assembly for a file
+projectile.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/projectile.cpp.s
+.PHONY : projectile.cpp.s
+
+quadtree.obj: quadtree.cpp.obj
+.PHONY : quadtree.obj
+
+# target to build an object file
+quadtree.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/quadtree.cpp.obj
+.PHONY : quadtree.cpp.obj
+
+quadtree.i: quadtree.cpp.i
+.PHONY : quadtree.i
+
+# target to preprocess a source file
+quadtree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/quadtree.cpp.i
+.PHONY : quadtree.cpp.i
+
+quadtree.s: quadtree.cpp.s
+.PHONY : quadtree.s
+
+# target to generate assembly for a file
+quadtree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gamelib.dir\build.make CMakeFiles/gamelib.dir/quadtree.cpp.s
+.PHONY : quadtree.cpp.s
 
 randomness.obj: randomness.cpp.obj
 .PHONY : randomness.obj
@@ -568,9 +736,18 @@ help:
 	@echo ... camera.obj
 	@echo ... camera.i
 	@echo ... camera.s
+	@echo ... combat.obj
+	@echo ... combat.i
+	@echo ... combat.s
 	@echo ... command.obj
 	@echo ... command.i
 	@echo ... command.s
+	@echo ... enemy.obj
+	@echo ... enemy.i
+	@echo ... enemy.s
+	@echo ... enemytype.obj
+	@echo ... enemytype.i
+	@echo ... enemytype.s
 	@echo ... engine.obj
 	@echo ... engine.i
 	@echo ... engine.s
@@ -583,15 +760,27 @@ help:
 	@echo ... level.obj
 	@echo ... level.i
 	@echo ... level.s
+	@echo ... loadscreen.obj
+	@echo ... loadscreen.i
+	@echo ... loadscreen.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... object.obj
+	@echo ... object.i
+	@echo ... object.s
 	@echo ... physics.obj
 	@echo ... physics.i
 	@echo ... physics.s
 	@echo ... player.obj
 	@echo ... player.i
 	@echo ... player.s
+	@echo ... projectile.obj
+	@echo ... projectile.i
+	@echo ... projectile.s
+	@echo ... quadtree.obj
+	@echo ... quadtree.i
+	@echo ... quadtree.s
 	@echo ... randomness.obj
 	@echo ... randomness.i
 	@echo ... randomness.s

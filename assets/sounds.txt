@@ -1,5 +1,7 @@
 jumping jump-sound-14839.mp3
-running fast-run-113726.mp3
+running running-on-leaves.mp3
 standing respiracionprofunda-40434.mp3
+attacking sword_swing.mp3
 landing stand-sound.wav
 background lord_of_the_rings_background.mp3
+action action-music.mp3

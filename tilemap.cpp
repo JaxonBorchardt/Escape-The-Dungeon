@@ -34,8 +34,7 @@ void Tilemap::check_bounds(int x, int y) const
     if (x < 0 || x >= width || y < 0 || y >= height)
     {
         std::stringstream ss;
-        ss << "(" << x << ", "
-           << ") is not within bounds (";
+        ss << "(" << x << ", " << y << ") is not within bounds (";
         ss << width << ", " << height << ")";
         throw std::runtime_error(ss.str());
     }

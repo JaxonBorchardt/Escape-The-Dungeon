@@ -1,0 +1,9 @@
+fox_set3.xcf
+
+fox_standing 16 16 64 32 3 6
+fox_running 16 64 64 32 3 8 
+fox_jumping 144 96 64 48 3 5
+fox_attacking 0 144 96 48 3 9
+fox_hurting 96 202 96 38 3 4
+
+ninja_star 784 96 16 16 2

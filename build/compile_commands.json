@@ -46,8 +46,33 @@
 },
 {
   "directory": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/build",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/gamelib.dir/includes_CXX.rsp -g -std=c++17 -g -Wall -Wextra -o CMakeFiles\\gamelib.dir\\enemy.cpp.obj -c C:\\Users\\jaxro\\OneDrive\\SophmoreYear\\Game_Dev\\code-organization\\enemy.cpp",
+  "file": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/enemy.cpp"
+},
+{
+  "directory": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/build",
   "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/gamelib.dir/includes_CXX.rsp -g -std=c++17 -g -Wall -Wextra -o CMakeFiles\\gamelib.dir\\camera.cpp.obj -c C:\\Users\\jaxro\\OneDrive\\SophmoreYear\\Game_Dev\\code-organization\\camera.cpp",
   "file": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/camera.cpp"
+},
+{
+  "directory": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/build",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/gamelib.dir/includes_CXX.rsp -g -std=c++17 -g -Wall -Wextra -o CMakeFiles\\gamelib.dir\\object.cpp.obj -c C:\\Users\\jaxro\\OneDrive\\SophmoreYear\\Game_Dev\\code-organization\\object.cpp",
+  "file": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/object.cpp"
+},
+{
+  "directory": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/build",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/gamelib.dir/includes_CXX.rsp -g -std=c++17 -g -Wall -Wextra -o CMakeFiles\\gamelib.dir\\combat.cpp.obj -c C:\\Users\\jaxro\\OneDrive\\SophmoreYear\\Game_Dev\\code-organization\\combat.cpp",
+  "file": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/combat.cpp"
+},
+{
+  "directory": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/build",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/gamelib.dir/includes_CXX.rsp -g -std=c++17 -g -Wall -Wextra -o CMakeFiles\\gamelib.dir\\projectile.cpp.obj -c C:\\Users\\jaxro\\OneDrive\\SophmoreYear\\Game_Dev\\code-organization\\projectile.cpp",
+  "file": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/projectile.cpp"
+},
+{
+  "directory": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/build",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/gamelib.dir/includes_CXX.rsp -g -std=c++17 -g -Wall -Wextra -o CMakeFiles\\gamelib.dir\\quadtree.cpp.obj -c C:\\Users\\jaxro\\OneDrive\\SophmoreYear\\Game_Dev\\code-organization\\quadtree.cpp",
+  "file": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/quadtree.cpp"
 },
 {
   "directory": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/build",
@@ -63,6 +88,16 @@
   "directory": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/build",
   "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/gamelib.dir/includes_CXX.rsp -g -std=c++17 -g -Wall -Wextra -o CMakeFiles\\gamelib.dir\\settings.cpp.obj -c C:\\Users\\jaxro\\OneDrive\\SophmoreYear\\Game_Dev\\code-organization\\settings.cpp",
   "file": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/settings.cpp"
+},
+{
+  "directory": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/build",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/gamelib.dir/includes_CXX.rsp -g -std=c++17 -g -Wall -Wextra -o CMakeFiles\\gamelib.dir\\loadscreen.cpp.obj -c C:\\Users\\jaxro\\OneDrive\\SophmoreYear\\Game_Dev\\code-organization\\loadscreen.cpp",
+  "file": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/loadscreen.cpp"
+},
+{
+  "directory": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/build",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/gamelib.dir/includes_CXX.rsp -g -std=c++17 -g -Wall -Wextra -o CMakeFiles\\gamelib.dir\\enemytype.cpp.obj -c C:\\Users\\jaxro\\OneDrive\\SophmoreYear\\Game_Dev\\code-organization\\enemytype.cpp",
+  "file": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/enemytype.cpp"
 },
 {
   "directory": "C:/Users/jaxro/OneDrive/SophmoreYear/Game_Dev/code-organization/build",

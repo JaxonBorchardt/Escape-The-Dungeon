@@ -347,7 +347,6 @@ CMakeFiles/main.dir/main.cpp.obj: ../main.cpp \
   C:/msys64/mingw64/include/c++/12.2.0/sstream \
   C:/msys64/mingw64/include/c++/12.2.0/bits/sstream.tcc \
   ../command.h \
-  ../engine.h \
   C:/msys64/mingw64/include/c++/12.2.0/memory \
   C:/msys64/mingw64/include/c++/12.2.0/bits/stl_raw_storage_iter.h \
   C:/msys64/mingw64/include/c++/12.2.0/bits/align.h \
@@ -363,17 +362,25 @@ CMakeFiles/main.dir/main.cpp.obj: ../main.cpp \
   C:/msys64/mingw64/include/c++/12.2.0/backward/auto_ptr.h \
   C:/msys64/mingw64/include/c++/12.2.0/pstl/glue_memory_defs.h \
   C:/msys64/mingw64/include/c++/12.2.0/pstl/execution_defs.h \
+  ../projectile.h \
+  ../object.h \
+  ../physics.h \
+  ../sprite.h \
+  ../combat.h \
+  ../engine.h \
+  C:/msys64/mingw64/include/c++/12.2.0/optional \
   ../audio.h \
   C:/msys64/mingw64/include/SDL2/SDL_mixer.h \
   ../graphics.h \
   ../animatedsprite.h \
-  ../sprite.h \
   ../world.h \
   ../tilemap.h \
   ../level.h \
+  ../enemytype.h \
+  ../enemy.h \
+  ../quadtree.h \
   ../player.h \
   ../fsm.h \
-  ../physics.h \
   ../settings.h
 
 
@@ -829,6 +836,8 @@ C:/msys64/mingw64/include/c++/12.2.0/compare:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/avxintrin.h:
 
+../enemy.h:
+
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/avxvnniintrin.h:
 
 C:/msys64/mingw64/include/c++/12.2.0/bits/streambuf_iterator.h:
@@ -846,6 +855,8 @@ C:/msys64/mingw64/include/c++/12.2.0/stdexcept:
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/avx512vlbwintrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/avx512vldqintrin.h:
+
+../combat.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/avx512ifmavlintrin.h:
 
@@ -975,6 +986,8 @@ C:/msys64/mingw64/include/c++/12.2.0/bits/chrono.h:
 
 C:/msys64/mingw64/include/c++/12.2.0/cstdint:
 
+../quadtree.h:
+
 C:/msys64/mingw64/include/time.h:
 
 C:/msys64/mingw64/include/sec_api/sys/timeb_s.h:
@@ -1095,8 +1108,6 @@ C:/msys64/mingw64/include/c++/12.2.0/bits/algorithmfwd.h:
 
 C:/msys64/mingw64/include/c++/12.2.0/bits/uniform_int_dist.h:
 
-../engine.h:
-
 C:/msys64/mingw64/include/c++/12.2.0/memory:
 
 C:/msys64/mingw64/include/c++/12.2.0/bits/stl_raw_storage_iter.h:
@@ -1113,14 +1124,24 @@ C:/msys64/mingw64/include/c++/12.2.0/bits/atomic_lockfree_defines.h:
 
 C:/msys64/mingw64/include/c++/12.2.0/backward/auto_ptr.h:
 
+../projectile.h:
+
+../object.h:
+
+../sprite.h:
+
+../engine.h:
+
+C:/msys64/mingw64/include/c++/12.2.0/optional:
+
 ../audio.h:
 
 ../graphics.h:
 
-../sprite.h:
-
 ../world.h:
 
 ../level.h:
+
+../enemytype.h:
 
 ../player.h:

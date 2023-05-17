@@ -1,13 +1,17 @@
 load-spritesheet tileset.txt
 load-spritesheet decors.txt
 load-spritesheet characters.txt
+load-spritesheet fox.txt
 load-spritesheet my_characters.txt
 load-sounds sounds.txt
 
+background Background.png 3 15
+background Layer1.png 3 10
+background Layer2.png 3 5
 
-background BG1.png 4
-background BG2.png 2
-background BG3.png 1
+
+enemy M monster
+enemy l troll
 
 tile q grass_left true
 tile w grass_center true
@@ -23,3 +27,7 @@ tile y castle_right true
 
 tile T tree false
 tile B bush false
+
+tile x treasure_chest false end_game
+tile ! none false play_sound action true
+tile h hole false load_level level-03.txt

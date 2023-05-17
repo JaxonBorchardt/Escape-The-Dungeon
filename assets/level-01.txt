@@ -1,0 +1,26 @@
+level_01_theme.txt
+sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+s                                                                                               s
+s                    c                 c                  c                                     s                                                          s                                                                                               s                       
+s                                                                       p     p          o      s
+s                                                           sssssssssssssssssssssssssssssssssssss
+s                         p       R                 sssssssssssssssssssssssssssssssssssssssssssss
+s         sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+s                                                                                               s
+ssss                      r                                                                     s
+s               p  sssssssssssssssb           p                                c                s
+sssssss        sssssssssssssssssssss        sssssss                                             s
+s           ssssssssssssssssssssss        sssssssss        ssssssss                             s
+s         ssssssssssssssssssssssss          sssssss        ssssssss                             s
+sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssb            s
+sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssb        sssss
+sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssb            s
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss       is
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss            s
+s                                                                                           sssss
+s                                                                              r                s
+s       c        c        c                            R b         ssssssssssssssssssssssssssssss
+sb                               p           ssssssssssssssssssssssssssssssssssssss             s
+sbb     P g            z   ssssssssssssssssssssssssssssssss                                     s
+sssssssssssssssssssssssssssssssssssssssssssss                                                   s
+sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss

@@ -5,6 +5,7 @@
 #include "vec.h"
 #include "sprite.h"
 #include "tilemap.h"
+#include "enemytype.h"
 
 class Graphics;
 class Audio;
@@ -19,7 +20,9 @@ public:
     Vec<double> player_start_location{-1, -1};
 
     std::unordered_map<char, Tile> tile_types;
-    std::vector<std::pair<Vec<int>, Tile>> tiles;    // tiles need to change for each level
+    std::vector<std::pair<Vec<int>, Tile>> tiles; // tiles need to change for each level
+    std::unordered_map<char, std::function<EnemyType(Graphics &)>> enemy_types;
+    std::vector<std::pair<Vec<double>, EnemyType>> enemies;
     std::vector<std::pair<Sprite, int>> backgrounds; // distance from player, move slower
 
 private:

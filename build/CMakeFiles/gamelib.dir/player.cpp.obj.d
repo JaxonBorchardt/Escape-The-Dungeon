@@ -343,16 +343,23 @@ CMakeFiles/gamelib.dir/player.cpp.obj: \
  C:/msys64/mingw64/include/c++/12.2.0/pstl/glue_memory_defs.h \
  C:/msys64/mingw64/include/c++/12.2.0/pstl/execution_defs.h \
  C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\command.h \
+ C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\projectile.h \
+ C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\object.h \
+ C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\physics.h \
+ C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\sprite.h \
+ C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\combat.h \
  C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\fsm.h \
  C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\graphics.h \
  C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\animatedsprite.h \
- C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\sprite.h \
- C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\physics.h \
  C:/msys64/mingw64/include/c++/12.2.0/iostream \
  C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\engine.h \
+ C:/msys64/mingw64/include/c++/12.2.0/optional \
  C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\audio.h \
  C:/msys64/mingw64/include/SDL2/SDL_mixer.h \
  C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\camera.h \
  C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\world.h \
  C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\tilemap.h \
- C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\level.h
+ C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\level.h \
+ C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\enemytype.h \
+ C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\enemy.h \
+ C:\Users\jaxro\OneDrive\SophmoreYear\Game_Dev\code-organization\quadtree.h

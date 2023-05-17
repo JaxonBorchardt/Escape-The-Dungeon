@@ -1,0 +1,4 @@
+rat1.xcf
+
+rat_standing 16 16 64 32 3 6
+rat_running 0 60 64 37 3 8

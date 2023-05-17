@@ -1,0 +1,4 @@
+archer.xcf
+
+archer_standing 0 16 64 32 3 7
+archer_running 0 64 64 32 3 8

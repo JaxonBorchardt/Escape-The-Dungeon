@@ -21,4 +21,5 @@ void Settings::load()
     load("screen_height", screen_height);
     load("tilesize", titlesize);
     load("starting_level", starting_level);
+    load("first_level", first_level);
 }

@@ -1,6 +1,7 @@
 #include "physics.h"
 
-void Physics::update(double dt) {
+void Physics::update(double dt)
+{
     // update physics, semi-implicit euler
     velocity += acceleration * dt;
 
@@ -9,4 +10,9 @@ void Physics::update(double dt) {
     velocity.y = std::clamp(velocity.y, -terminal_velocity, terminal_velocity);
 
     position += velocity * dt;
+}
+
+void Physics::apply_friction(double friction)
+{
+    velocity.x *= friction;
 }

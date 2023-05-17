@@ -1,0 +1,43 @@
+load-spritesheet my_tileset.txt
+load-spritesheet fox.txt
+load-spritesheet rat.txt
+load-spritesheet boss.txt
+load-spritesheet archer.txt
+load-spritesheet my_characters.txt
+load-sounds level_01_sounds.txt
+
+background Background.png 3 5
+background Layer1.png 3 3
+background Layer2.png 3 1
+
+enemy 1 archer
+enemy 2 archer_running
+
+enemy 8 boss
+enemy 9 boss_running
+
+tile h my_grass_left true
+tile j my_grass_center true
+tile k my_grass_right true
+
+tile , grass_bottom_left true
+tile . grass_bottom_center true
+tile / grass_bottom_right true
+
+tile q my_dirt_left true
+tile w my_dirt_center false
+tile e my_dirt_right false
+
+tile r my_dirt_bottom_left false
+tile t my_dirt_bottom_center false
+tile y my_dirt_bottom_right false
+
+tile | boundary_wall true
+
+tile # flower false
+tile ! my_tree false
+tile @ my_bush false
+tile z apple false health_tile
+
+tile 3 red_flag false load_level level-03.txt 
+tile 4 ripped_flag false end_game 

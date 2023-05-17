@@ -1,0 +1,4 @@
+boss.xcf
+
+boss_standing 0 0 96 48 3 5
+boss_running 0 48 96 48 3 8 
