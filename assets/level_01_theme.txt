@@ -13,7 +13,7 @@ tile d dark_stone false
 tile a light_stone false 
 
 
-tile b barrel false health_tile
+tile b barrel false 
 tile c ball_chain false
 tile i candel false
 tile p spikes false damage_tile

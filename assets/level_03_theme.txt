@@ -4,7 +4,7 @@ load-spritesheet rat.txt
 load-spritesheet boss.txt
 load-spritesheet archer.txt
 load-spritesheet my_characters.txt
-load-sounds level_01_sounds.txt
+load-sounds sounds.txt
 
 background Background.png 3 5
 background Layer1.png 3 3
